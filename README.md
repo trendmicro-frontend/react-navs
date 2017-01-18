@@ -17,7 +17,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 2. At this point you can import `@trendmicro/react-navs` and its styles in your application as follows:
 
   ```js
-  import Navs from '@trendmicro/react-navs';
+  import { Nav, NavItems } from '@trendmicro/react-navs';
 
   // Be sure to include styles at some point, probably during your bootstraping
   import '@trendmicro/react-navs/dist/react-navs.css';
@@ -26,17 +26,25 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 ## Usage
 
 ```js
-<Navs
-    className="component"
+<Nav
+    navStyle="tabs"
+    activeKey={this.state.activeTab}
+    onSelect={(eventKey, event) => {
+        this.setState({ activeTab: eventKey });
+    }}
 >
-    GitHub
-</Navs>
+    <NavItem eventKey={1}>Item 1</NavItem>
+    <NavItem eventKey={2}>Item 2</NavItem>
+    <NavItem eventKey={3}>Item 3</NavItem>
+    <NavItem eventKey={4}>Item 4</NavItem>
+</Nav>
 ```
-
 
 ## API
 
 ### Properties
+
+#### Nav
 
 <table>
   <thead>
@@ -49,14 +57,101 @@ Demo: https://trendmicro-frontend.github.io/react-navs
   </thead>
   <tbody>
     <tr>
-      <td></td>
-      <td></td>
+      <td>activeHref</td>
+      <td>String</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
+      <td>activeKey</td>
+      <td>Any</td>
       <td></td>
       <td></td>
+    </tr>
+    <tr>
+      <td>navStyle</td>
+      <td>String</td>
+      <td>'tabs'</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>justified</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stacked</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>onSelect</td>
+      <td>Function(eventKey, event)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>role</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### NavItem
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Name</th>
+      <th align="left">Type</th>
+      <th align="left">Default</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>active</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>disabled</td>
+      <td>Boolean</td>
+      <td>false</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>eventKey</td>
+      <td>Any</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>href</td>
+      <td>String</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>onClick</td>
+      <td>Function(event)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>onSelect</td>
+      <td>Function(eventKey, event)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>role</td>
+      <td>String</td>
       <td></td>
       <td></td>
     </tr>
