@@ -59,20 +59,20 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     <tr>
       <td>activeHref</td>
       <td>String</td>
-      <td>Marks the child NavItem with a matching `href` prop as active.</td>
       <td></td>
+      <td>Marks the child NavItem with a matching `href` prop as active.</td>
     </tr>
     <tr>
       <td>activeKey</td>
       <td>Any</td>
-      <td>Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.</td>
       <td></td>
+      <td>Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.</td>
     </tr>
     <tr>
       <td>navStyle</td>
       <td>One of: 'tabs', 'pills', 'panel-tabs'</td>
       <td>'tabs'</td>
-      <td>Component visual or contextual style variants</td>
+      <td>Component visual or contextual style variants.</td>
     </tr>
     <tr>
       <td>justified</td>
