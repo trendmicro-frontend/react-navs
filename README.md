@@ -59,44 +59,44 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     <tr>
       <td>activeHref</td>
       <td>String</td>
-      <td></td>
+      <td>Marks the child NavItem with a matching `href` prop as active.</td>
       <td></td>
     </tr>
     <tr>
       <td>activeKey</td>
       <td>Any</td>
-      <td></td>
+      <td>Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.</td>
       <td></td>
     </tr>
     <tr>
       <td>navStyle</td>
-      <td>String</td>
+      <td>One of: 'tabs', 'pills', 'panel-tabs'</td>
       <td>'tabs'</td>
-      <td></td>
+      <td>Component visual or contextual style variants</td>
     </tr>
     <tr>
       <td>justified</td>
       <td>Boolean</td>
       <td>false</td>
-      <td></td>
+      <td>Make tabs or pills equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.</td>
     </tr>
     <tr>
       <td>stacked</td>
       <td>Boolean</td>
       <td>false</td>
-      <td></td>
+      <td>Position NavItem vertically.</td>
     </tr>
     <tr>
       <td>onSelect</td>
       <td>Function(eventKey, event)</td>
       <td></td>
-      <td></td>
+      <td>A callback fired when a NavItem is selected.</td>
     </tr>
     <tr>
       <td>role</td>
       <td>String</td>
       <td></td>
-      <td></td>
+      <td>ARIA role for the Nav.</td>
     </tr>
   </tbody>
 </table>
