@@ -22057,7 +22057,7 @@
 	    // Marks the child NavItem with a matching `href` prop as active.
 	    activeHref: _react.PropTypes.string,
 	    // Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
-	    activeKey: _react.PropTypes.key,
+	    activeKey: _react.PropTypes.any,
 	    // Component visual or contextual style variants.
 	    navStyle: _react.PropTypes.oneOf(['tabs', 'pills', 'panel-tabs']),
 	    // Make tabs or pills equal widths of their parent at screens wider than 768px.
@@ -22070,6 +22070,7 @@
 	    // ARIA role for the Nav.
 	    role: _react.PropTypes.string
 	}, _class.defaultProps = {
+	    navStyle: 'tabs',
 	    justified: false,
 	    stacked: false
 	}, _temp);
@@ -22701,11 +22702,11 @@
 	}(_react.Component), _class.propTypes = {
 	    active: _react.PropTypes.bool,
 	    disabled: _react.PropTypes.bool,
-	    role: _react.PropTypes.string,
+	    eventKey: _react.PropTypes.any,
 	    href: _react.PropTypes.string,
 	    onClick: _react.PropTypes.func,
 	    onSelect: _react.PropTypes.func,
-	    eventKey: _react.PropTypes.any
+	    role: _react.PropTypes.string
 	}, _class.defaultProps = {
 	    active: false,
 	    disabled: false
@@ -22857,4 +22858,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?6fc5041d162ea8070ae1
+//# sourceMappingURL=bundle.js.map?9873e63a8c37c1c45937
