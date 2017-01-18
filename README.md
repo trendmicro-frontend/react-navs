@@ -58,13 +58,13 @@ Demo: https://trendmicro-frontend.github.io/react-navs
   <tbody>
     <tr>
       <td>activeHref</td>
-      <td>String</td>
+      <td>string</td>
       <td></td>
       <td>Marks the child NavItem with a matching `href` prop as active.</td>
     </tr>
     <tr>
       <td>activeKey</td>
-      <td>Any</td>
+      <td>any</td>
       <td></td>
       <td>Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.</td>
     </tr>
@@ -76,25 +76,25 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     </tr>
     <tr>
       <td>justified</td>
-      <td>Boolean</td>
+      <td>boolean</td>
       <td>false</td>
       <td>Make tabs or pills equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.</td>
     </tr>
     <tr>
       <td>stacked</td>
-      <td>Boolean</td>
+      <td>boolean</td>
       <td>false</td>
       <td>Position NavItem vertically.</td>
     </tr>
     <tr>
       <td>onSelect</td>
-      <td>Function(eventKey, event)</td>
+      <td>function(eventKey, event)</td>
       <td></td>
       <td>A callback fired when a NavItem is selected.</td>
     </tr>
     <tr>
       <td>role</td>
-      <td>String</td>
+      <td>string</td>
       <td></td>
       <td>ARIA role for the Nav.</td>
     </tr>
@@ -115,43 +115,43 @@ Demo: https://trendmicro-frontend.github.io/react-navs
   <tbody>
     <tr>
       <td>active</td>
-      <td>Boolean</td>
+      <td>boolean</td>
       <td>false</td>
       <td></td>
     </tr>
     <tr>
       <td>disabled</td>
-      <td>Boolean</td>
+      <td>boolean</td>
       <td>false</td>
       <td></td>
     </tr>
     <tr>
       <td>eventKey</td>
-      <td>Any</td>
+      <td>any</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>href</td>
-      <td>String</td>
+      <td>string</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>onClick</td>
-      <td>Function(event)</td>
+      <td>function(event)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>onSelect</td>
-      <td>Function(eventKey, event)</td>
+      <td>function(eventKey, event)</td>
       <td></td>
       <td></td>
     </tr>
     <tr>
       <td>role</td>
-      <td>String</td>
+      <td>string</td>
       <td></td>
       <td></td>
     </tr>
