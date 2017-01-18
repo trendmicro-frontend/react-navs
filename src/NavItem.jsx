@@ -9,11 +9,11 @@ export default class extends Component {
     static propTypes = {
         active: PropTypes.bool,
         disabled: PropTypes.bool,
-        role: PropTypes.string,
+        eventKey: PropTypes.any,
         href: PropTypes.string,
         onClick: PropTypes.func,
         onSelect: PropTypes.func,
-        eventKey: PropTypes.any
+        role: PropTypes.string
     };
     static defaultProps = {
         active: false,

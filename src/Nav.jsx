@@ -9,7 +9,7 @@ export default class extends Component {
         // Marks the child NavItem with a matching `href` prop as active.
         activeHref: PropTypes.string,
         // Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
-        activeKey: PropTypes.key,
+        activeKey: PropTypes.any,
         // Component visual or contextual style variants.
         navStyle: PropTypes.oneOf([
             'tabs',
@@ -27,6 +27,7 @@ export default class extends Component {
         role: PropTypes.string
     };
     static defaultProps = {
+        navStyle: 'tabs',
         justified: false,
         stacked: false
     };
