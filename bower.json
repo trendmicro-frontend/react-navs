@@ -2,6 +2,10 @@
   "name": "@trendmicro/react-navs",
   "description": "Trend Micro Components: React Navs",
   "authors": [
+    "Cheton Wu <cheton_wu@trend.com.tw>"
+  ],
+  "homepage": "https://github.com/trendmicro-frontend/react-navs",
+  "authors": [
     {
       "name": "",
       "email": "",
