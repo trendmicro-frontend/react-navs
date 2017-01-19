@@ -115,33 +115,122 @@
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 80 } },
+	                                { className: 'panel-body' },
 	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        navStyle: 'tabs',
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
+	                                    'p',
+	                                    null,
+	                                    'Default'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { minHeight: 40 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
+	                                        _src.Nav,
+	                                        {
+	                                            navStyle: 'tabs',
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement('hr', null),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Stacked'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { minHeight: 180 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
+	                                        _src.Nav,
+	                                        {
+	                                            style: { display: 'inline-block', minWidth: 80 },
+	                                            navStyle: 'tabs',
+	                                            stacked: true,
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
+	                                    )
+	                                ),
+	                                _react2.default.createElement('hr', null),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Justified'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { style: { minHeight: 40 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
+	                                        _src.Nav,
+	                                        {
+	                                            style: { display: 'inline-block', minWidth: 80 },
+	                                            navStyle: 'tabs',
+	                                            justified: true,
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
 	                                    )
 	                                )
 	                            )
@@ -159,248 +248,126 @@
 	                                _react2.default.createElement(
 	                                    'div',
 	                                    { className: 'panel-title' },
-	                                    'Pills'
+	                                    'Light Tabs'
 	                                )
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 80 } },
+	                                { className: 'panel-body' },
 	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        navStyle: 'pills',
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'row' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-sm-6' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel panel-default' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-heading' },
+	                                    'p',
+	                                    null,
+	                                    'Default'
+	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'panel-title' },
-	                                    'Stacked Tabs'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 220 } },
-	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        style: { display: 'inline-block', minWidth: 80 },
-	                                        navStyle: 'tabs',
-	                                        stacked: true,
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
+	                                    { style: { minHeight: 40 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
+	                                        _src.Nav,
+	                                        {
+	                                            navStyle: 'light-tabs',
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
 	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-sm-6' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel panel-default' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-heading' },
+	                                ),
+	                                _react2.default.createElement('hr', null),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Stacked'
+	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'panel-title' },
-	                                    'Stacked Pills'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 220 } },
-	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        style: { display: 'inline-block', minWidth: 80 },
-	                                        navStyle: 'pills',
-	                                        stacked: true,
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
+	                                    { style: { minHeight: 180 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
+	                                        _src.Nav,
+	                                        {
+	                                            style: { display: 'inline-block', minWidth: 80 },
+	                                            navStyle: 'light-tabs',
+	                                            stacked: true,
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
 	                                    )
-	                                )
-	                            )
-	                        )
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'row' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-sm-6' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel panel-default' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-heading' },
+	                                ),
+	                                _react2.default.createElement('hr', null),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'Justified'
+	                                ),
 	                                _react2.default.createElement(
 	                                    'div',
-	                                    { className: 'panel-title' },
-	                                    'Justified Tabs'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 80 } },
-	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        navStyle: 'tabs',
-	                                        justified: true,
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
+	                                    { style: { minHeight: 40 } },
 	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
-	                                    )
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'col-sm-6' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'panel panel-default' },
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-heading' },
-	                                _react2.default.createElement(
-	                                    'div',
-	                                    { className: 'panel-title' },
-	                                    'Justified Pills'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'panel-body', style: { minHeight: 80 } },
-	                                _react2.default.createElement(
-	                                    _src.Nav,
-	                                    {
-	                                        navStyle: 'pills',
-	                                        justified: true,
-	                                        activeKey: this.state.tab,
-	                                        onSelect: this.actions.selectTab
-	                                    },
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 1 },
-	                                        'Item 1'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 2 },
-	                                        'Item 2'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 3 },
-	                                        'Item 3'
-	                                    ),
-	                                    _react2.default.createElement(
-	                                        _src.NavItem,
-	                                        { eventKey: 4 },
-	                                        'Item 4'
+	                                        _src.Nav,
+	                                        {
+	                                            navStyle: 'light-tabs',
+	                                            justified: true,
+	                                            activeKey: this.state.tab,
+	                                            onSelect: this.actions.selectTab
+	                                        },
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 1 },
+	                                            'Item 1'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 2 },
+	                                            'Item 2'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 3 },
+	                                            'Item 3'
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            _src.NavItem,
+	                                            { eventKey: 4 },
+	                                            'Item 4'
+	                                        )
 	                                    )
 	                                )
 	                            )
@@ -22031,7 +21998,7 @@
 	                'ul',
 	                _extends({}, props, {
 	                    role: role,
-	                    className: (0, _classnames2.default)(className, _index2.default.nav, _defineProperty({}, _index2.default.navTabs, navStyle === 'tabs'), _defineProperty({}, _index2.default.navPills, navStyle === 'pills'), _defineProperty({}, _index2.default.navJustified, justified || navStyle === 'panel-tabs'), _defineProperty({}, _index2.default.noBottomBorder, navStyle === 'panel-tabs'), _defineProperty({}, _index2.default.navStacked, stacked))
+	                    className: (0, _classnames2.default)(className, _index2.default.nav, _defineProperty({}, _index2.default.navTabs, navStyle === 'tabs'), _defineProperty({}, _index2.default.navLightTabs, navStyle === 'light-tabs'), _defineProperty({}, _index2.default.navPanelTabs, navStyle === 'panel-tabs'), _defineProperty({}, _index2.default.navJustified, justified || navStyle === 'panel-tabs'), _defineProperty({}, _index2.default.navStacked, stacked))
 	                }),
 	                _react2.default.Children.map(children, function (child) {
 	                    if (!_react2.default.isValidElement(child)) {
@@ -22059,8 +22026,8 @@
 	    // Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
 	    activeKey: _react.PropTypes.any,
 	    // Component visual or contextual style variants.
-	    navStyle: _react.PropTypes.oneOf(['tabs', 'pills', 'panel-tabs']),
-	    // Make tabs or pills equal widths of their parent at screens wider than 768px.
+	    navStyle: _react.PropTypes.oneOf(['tabs', 'light-tabs', 'panel-tabs']),
+	    // Make tabs equal widths of their parent at screens wider than 768px.
 	    // On smaller screens, the nav links are stacked.
 	    justified: _react.PropTypes.bool,
 	    // Position NavItem vertically.
@@ -22215,8 +22182,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?-autoprefixer&camelCase&modules&importLoaders=1&localIdentName=[hash:base64:5]!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?-autoprefixer&camelCase&modules&importLoaders=1&localIdentName=[hash:base64:5]!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?-autoprefixer&camelCase&modules&importLoaders=1&localIdentName=[path][name]__[local]--[hash:base64:5]!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?-autoprefixer&camelCase&modules&importLoaders=1&localIdentName=[path][name]__[local]--[hash:base64:5]!./../node_modules/stylus-loader/index.js!./../node_modules/stylint-loader/index.js!./index.styl");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -22234,38 +22201,36 @@
 	
 	
 	// module
-	exports.push([module.id, "._1YgZV {\n  margin-bottom: 0;\n  padding-left: 0;\n  list-style: none;\n}\n._1YgZV > li {\n  position: relative;\n  display: block;\n}\n._1YgZV > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 24px;\n  text-decoration: none;\n  line-height: 20px;\n}\n._1YgZV > li > a:hover {\n  background-color: #f4f4f4;\n}\n._1YgZV > li > a:focus,\n._1YgZV > li > a:active {\n  background-color: #eee;\n}\n._1YgZV > li > a ._3JEHc {\n  margin-left: 4px;\n  border-top: 4px dashed #fff;\n}\n._1YgZV > li._3l4Hc > a {\n  color: #e6e6e6;\n}\n._1YgZV > li._3l4Hc > a:hover,\n._1YgZV > li._3l4Hc > a:focus {\n  color: #e6e6e6;\n  text-decoration: none;\n  background-color: transparent;\n  cursor: not-allowed;\n}\n._1YgZV ._2SG_5 > a,\n._1YgZV ._2SG_5 > a:hover,\n._1YgZV ._2SG_5 > a:focus {\n  background-color: #eee;\n  border-color: #0096cc;\n}\n._1YgZV ._2ZORI {\n  height: 1px;\n  margin: 8px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n._1YgZV > li > a > img {\n  max-width: none;\n}\n.PvWsU > li {\n  float: left;\n}\n.PvWsU > li + li {\n  margin-left: -1px;\n}\n.PvWsU > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  border: 1px solid #ccc;\n  background-color: #fbfbfb;\n  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -o-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -ms-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: linear-gradient(to bottom, #fbfbfb 0%, #ececec 100%);\n  background-repeat: repeat-x;\n  padding: 8px 16px;\n  min-width: 80px;\n  text-align: center;\n}\n.PvWsU > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -moz-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -o-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -ms-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);\n  background-repeat: repeat-x;\n  border-color: #bbb;\n}\n.PvWsU > li > a:active {\n  color: #777;\n  background-color: #eee;\n  border-color: #bbb;\n  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  background-image: none;\n}\n.PvWsU > li._3WkHr > a,\n.PvWsU > li._3WkHr > a:hover,\n.PvWsU > li._3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-bottom-color: transparent;\n  cursor: default;\n  border-top: 2px solid #db3d44;\n  padding-top: 7px;\n}\n._3p0Q_ > li {\n  float: left;\n}\n._3p0Q_ > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  padding: 12px 16px;\n  min-width: 80px;\n  text-align: center;\n}\n._3p0Q_ > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  border-bottom: 2px solid #bbb;\n  padding-bottom: 10px;\n}\n._3p0Q_ > li > a:focus {\n  background-color: #fff;\n}\n._3p0Q_ > li + li {\n  margin-left: 1px;\n}\n._3p0Q_ > li._3WkHr > a,\n._3p0Q_ > li._3WkHr > a:hover,\n._3p0Q_ > li._3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  border-bottom: 2px solid #db3d44;\n  padding-bottom: 10px;\n}\n._3p0Q_.zo8Nw > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  border-bottom: 2px solid #bbb;\n  padding-bottom: 10px;\n}\n._3p0Q_.zo8Nw > li._3WkHr > a,\n._3p0Q_.zo8Nw > li._3WkHr > a:hover,\n._3p0Q_.zo8Nw > li._3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  border-bottom: 2px solid #db3d44;\n  padding-bottom: 10px;\n}\n._3p0Q_.zo8Nw > li > a {\n  background-color: #fff;\n  padding-bottom: 12px;\n  border-bottom: 0;\n}\n._3p0Q_.zo8Nw > li + li > a {\n  border-left: 0;\n}\n.zo8Nw {\n  width: 100%;\n}\n.zo8Nw > li {\n  float: none;\n  display: table-cell;\n  width: 1%;\n}\n.zo8Nw > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  text-align: center;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  padding-top: 8px;\n  padding-bottom: 7px;\n  border-bottom: 1px solid #ddd;\n}\n.zo8Nw > li > a:hover {\n  color: #777;\n  background-color: #eee;\n}\n.zo8Nw > li + li > a {\n  border-left: 1px solid #ddd;\n}\n.zo8Nw > li._3WkHr > a,\n.zo8Nw > li._3WkHr > a:hover,\n.zo8Nw > li._3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  cursor: default;\n}\n.zo8Nw._1Y8ry > li._3WkHr > a,\n.zo8Nw._1Y8ry > li._3WkHr > a:hover,\n.zo8Nw._1Y8ry > li._3WkHr > a:focus {\n  border-bottom: 0;\n}\n.zo8Nw > .Wq_VE ._2R-2v {\n  top: auto;\n  left: auto;\n}\n._3F58K > li {\n  float: none;\n}\n._3F58K > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n._3rpaq {\n  border-bottom: 0;\n}\n._3rpaq > li > a {\n  margin-right: 0;\n  border-radius: 3px;\n}\n._3rpaq > ._3WkHr > a,\n._3rpaq > ._3WkHr > a:hover,\n._3rpaq > ._3WkHr > a:focus {\n  border: 1px solid #ccc;\n}\n@media (min-width: 768px) {\n  ._3rpaq > li > a {\n    border-bottom: 1px solid #ccc;\n    border-radius: 3px 3px 0 0;\n  }\n  ._3rpaq > ._3WkHr > a,\n  ._3rpaq > ._3WkHr > a:hover,\n  ._3rpaq > ._3WkHr > a:focus {\n    border-bottom-color: #fff;\n  }\n}\n", ""]);
+	exports.push([module.id, "._-src-index__nav--1YgZV {\n  margin-bottom: 0;\n  padding-left: 0;\n  list-style: none;\n}\n._-src-index__nav--1YgZV > li {\n  position: relative;\n  display: block;\n}\n._-src-index__nav--1YgZV > li > a {\n  position: relative;\n  display: block;\n  padding: 10px 24px;\n  text-decoration: none;\n  line-height: 20px;\n}\n._-src-index__nav--1YgZV > li > a:hover {\n  background-color: #f4f4f4;\n}\n._-src-index__nav--1YgZV > li > a:focus,\n._-src-index__nav--1YgZV > li > a:active {\n  background-color: #eee;\n}\n._-src-index__nav--1YgZV > li > a ._-src-index__caret--3JEHc {\n  margin-left: 4px;\n  border-top: 4px dashed #fff;\n}\n._-src-index__nav--1YgZV > li._-src-index__disabled--3l4Hc > a {\n  color: #e6e6e6;\n}\n._-src-index__nav--1YgZV > li._-src-index__disabled--3l4Hc > a:hover,\n._-src-index__nav--1YgZV > li._-src-index__disabled--3l4Hc > a:focus {\n  color: #e6e6e6;\n  text-decoration: none;\n  background-color: transparent;\n  cursor: not-allowed;\n}\n._-src-index__nav--1YgZV ._-src-index__open--2SG_5 > a,\n._-src-index__nav--1YgZV ._-src-index__open--2SG_5 > a:hover,\n._-src-index__nav--1YgZV ._-src-index__open--2SG_5 > a:focus {\n  background-color: #eee;\n  border-color: #0096cc;\n}\n._-src-index__nav--1YgZV ._-src-index__nav-divider--2ZORI {\n  height: 1px;\n  margin: 8px 0;\n  overflow: hidden;\n  background-color: #e5e5e5;\n}\n._-src-index__nav--1YgZV > li > a > img {\n  max-width: none;\n}\n._-src-index__nav-tabs--PvWsU > li {\n  float: left;\n}\n._-src-index__nav-tabs--PvWsU > li + li {\n  margin-left: -1px;\n}\n._-src-index__nav-tabs--PvWsU > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  border: 1px solid #ccc;\n  background-color: #fbfbfb;\n  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -o-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -ms-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: linear-gradient(to bottom, #fbfbfb 0%, #ececec 100%);\n  background-repeat: repeat-x;\n  padding: 8px 16px;\n  min-width: 80px;\n  text-align: center;\n}\n._-src-index__nav-tabs--PvWsU > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -moz-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -o-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -ms-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);\n  background-repeat: repeat-x;\n  border-color: #bbb;\n}\n._-src-index__nav-tabs--PvWsU > li > a:active {\n  color: #777;\n  background-color: #eee;\n  border-color: #bbb;\n  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  background-image: none;\n}\n._-src-index__nav-tabs--PvWsU > li._-src-index__active--3WkHr > a,\n._-src-index__nav-tabs--PvWsU > li._-src-index__active--3WkHr > a:hover,\n._-src-index__nav-tabs--PvWsU > li._-src-index__active--3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  background-image: none;\n  border: 1px solid #ccc;\n  border-bottom-color: transparent;\n  cursor: default;\n  border-top: 2px solid #db3d44;\n  padding-top: 7px;\n}\n._-src-index__nav-light-tabs--xHPvy > li {\n  float: left;\n}\n._-src-index__nav-light-tabs--xHPvy > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  padding: 12px 16px;\n  min-width: 80px;\n  text-align: center;\n}\n._-src-index__nav-light-tabs--xHPvy > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  border-bottom: 2px solid #bbb;\n  padding-bottom: 10px;\n}\n._-src-index__nav-light-tabs--xHPvy > li > a:focus {\n  background-color: #fff;\n}\n._-src-index__nav-light-tabs--xHPvy > li + li {\n  margin-left: 1px;\n}\n._-src-index__nav-light-tabs--xHPvy > li._-src-index__active--3WkHr > a,\n._-src-index__nav-light-tabs--xHPvy > li._-src-index__active--3WkHr > a:hover,\n._-src-index__nav-light-tabs--xHPvy > li._-src-index__active--3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  border-bottom: 2px solid #db3d44;\n  padding-bottom: 10px;\n}\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li > a:hover {\n  color: #777;\n  background-color: #fff;\n  border-bottom: 2px solid #bbb;\n  padding-bottom: 10px;\n}\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a,\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:hover,\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  border-bottom: 2px solid #db3d44;\n  padding-bottom: 10px;\n}\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li > a {\n  background-color: #fff;\n  padding-bottom: 12px;\n  border-bottom: 0;\n}\n._-src-index__nav-light-tabs--xHPvy._-src-index__nav-justified--zo8Nw > li + li > a {\n  border-left: 0;\n}\n._-src-index__nav-panel-tabs--3eMNs._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a,\n._-src-index__nav-panel-tabs--3eMNs._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:hover,\n._-src-index__nav-panel-tabs--3eMNs._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:focus {\n  border-bottom: 0;\n}\n._-src-index__nav-justified--zo8Nw {\n  width: 100%;\n}\n._-src-index__nav-justified--zo8Nw > li {\n  float: none;\n  display: table-cell;\n  width: 1%;\n}\n._-src-index__nav-justified--zo8Nw > li > a {\n  font-family: Arial, \"Helvetica Neue\", Helvetica, sans-serif;\n  font-size: 13px;\n  color: #777;\n  text-align: center;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  padding-top: 8px;\n  padding-bottom: 7px;\n  border-bottom: 1px solid #ddd;\n}\n._-src-index__nav-justified--zo8Nw > li > a:hover {\n  color: #777;\n  background-color: #eee;\n}\n._-src-index__nav-justified--zo8Nw > li + li > a {\n  border-left: 1px solid #ddd;\n}\n._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a,\n._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:hover,\n._-src-index__nav-justified--zo8Nw > li._-src-index__active--3WkHr > a:focus {\n  color: #222;\n  font-weight: bold;\n  background-color: #fff;\n  cursor: default;\n}\n._-src-index__nav-justified--zo8Nw > ._-src-index__dropdown--Wq_VE ._-src-index__dropdown-menu--2R-2v {\n  top: auto;\n  left: auto;\n}\n._-src-index__nav-stacked--3F58K > li {\n  float: none;\n}\n._-src-index__nav-stacked--3F58K > li + li {\n  margin-top: 2px;\n  margin-left: 0;\n}\n", ""]);
 	
 	// exports
 	exports.locals = {
-		"nav": "_1YgZV",
-		"nav": "_1YgZV",
-		"caret": "_3JEHc",
-		"caret": "_3JEHc",
-		"disabled": "_3l4Hc",
-		"disabled": "_3l4Hc",
-		"open": "_2SG_5",
-		"open": "_2SG_5",
-		"nav-divider": "_2ZORI",
-		"navDivider": "_2ZORI",
-		"nav-tabs": "PvWsU",
-		"navTabs": "PvWsU",
-		"active": "_3WkHr",
-		"active": "_3WkHr",
-		"nav-pills": "_3p0Q_",
-		"navPills": "_3p0Q_",
-		"nav-justified": "zo8Nw",
-		"navJustified": "zo8Nw",
-		"no-bottom-border": "_1Y8ry",
-		"noBottomBorder": "_1Y8ry",
-		"dropdown": "Wq_VE",
-		"dropdown": "Wq_VE",
-		"dropdown-menu": "_2R-2v",
-		"dropdownMenu": "_2R-2v",
-		"nav-stacked": "_3F58K",
-		"navStacked": "_3F58K",
-		"nav-tabs-justified": "_3rpaq",
-		"navTabsJustified": "_3rpaq"
+		"nav": "_-src-index__nav--1YgZV",
+		"nav": "_-src-index__nav--1YgZV",
+		"caret": "_-src-index__caret--3JEHc",
+		"caret": "_-src-index__caret--3JEHc",
+		"disabled": "_-src-index__disabled--3l4Hc",
+		"disabled": "_-src-index__disabled--3l4Hc",
+		"open": "_-src-index__open--2SG_5",
+		"open": "_-src-index__open--2SG_5",
+		"nav-divider": "_-src-index__nav-divider--2ZORI",
+		"navDivider": "_-src-index__nav-divider--2ZORI",
+		"nav-tabs": "_-src-index__nav-tabs--PvWsU",
+		"navTabs": "_-src-index__nav-tabs--PvWsU",
+		"active": "_-src-index__active--3WkHr",
+		"active": "_-src-index__active--3WkHr",
+		"nav-light-tabs": "_-src-index__nav-light-tabs--xHPvy",
+		"navLightTabs": "_-src-index__nav-light-tabs--xHPvy",
+		"nav-justified": "_-src-index__nav-justified--zo8Nw",
+		"navJustified": "_-src-index__nav-justified--zo8Nw",
+		"nav-panel-tabs": "_-src-index__nav-panel-tabs--3eMNs",
+		"navPanelTabs": "_-src-index__nav-panel-tabs--3eMNs",
+		"dropdown": "_-src-index__dropdown--Wq_VE",
+		"dropdown": "_-src-index__dropdown--Wq_VE",
+		"dropdown-menu": "_-src-index__dropdown-menu--2R-2v",
+		"dropdownMenu": "_-src-index__dropdown-menu--2R-2v",
+		"nav-stacked": "_-src-index__nav-stacked--3F58K",
+		"navStacked": "_-src-index__nav-stacked--3F58K"
 	};
 
 /***/ },
@@ -22858,4 +22823,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?9873e63a8c37c1c45937
+//# sourceMappingURL=bundle.js.map?bd0fa5ff9b39965eb393

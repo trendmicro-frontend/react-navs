@@ -23,17 +23,52 @@ class App extends React.Component {
                                     Tabs
                                 </div>
                             </div>
-                            <div className="panel-body" style={{ minHeight: 80 }}>
-                                <Nav
-                                    navStyle="tabs"
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
+                            <div className="panel-body">
+                                <p>Default</p>
+                                <div style={{ minHeight: 40 }}>
+                                    <Nav
+                                        navStyle="tabs"
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
+                                </div>
+                                <hr />
+                                <p>Stacked</p>
+                                <div style={{ minHeight: 180 }}>
+                                    <Nav
+                                        style={{ display: 'inline-block', minWidth: 80 }}
+                                        navStyle="tabs"
+                                        stacked
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
+                                </div>
+                                <hr />
+                                <p>Justified</p>
+                                <div style={{ minHeight: 40 }}>
+                                    <Nav
+                                        style={{ display: 'inline-block', minWidth: 80 }}
+                                        navStyle="tabs"
+                                        justified
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -41,114 +76,54 @@ class App extends React.Component {
                         <div className="panel panel-default">
                             <div className="panel-heading">
                                 <div className="panel-title">
-                                    Pills
+                                    Light Tabs
                                 </div>
                             </div>
-                            <div className="panel-body" style={{ minHeight: 80 }}>
-                                <Nav
-                                    navStyle="pills"
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-6">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <div className="panel-title">
-                                    Stacked Tabs
+                            <div className="panel-body">
+                                <p>Default</p>
+                                <div style={{ minHeight: 40 }}>
+                                    <Nav
+                                        navStyle="light-tabs"
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
                                 </div>
-                            </div>
-                            <div className="panel-body" style={{ minHeight: 220 }}>
-                                <Nav
-                                    style={{ display: 'inline-block', minWidth: 80 }}
-                                    navStyle="tabs"
-                                    stacked
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-6">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <div className="panel-title">
-                                    Stacked Pills
+                                <hr />
+                                <p>Stacked</p>
+                                <div style={{ minHeight: 180 }}>
+                                    <Nav
+                                        style={{ display: 'inline-block', minWidth: 80 }}
+                                        navStyle="light-tabs"
+                                        stacked
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
                                 </div>
-                            </div>
-                            <div className="panel-body" style={{ minHeight: 220 }}>
-                                <Nav
-                                    style={{ display: 'inline-block', minWidth: 80 }}
-                                    navStyle="pills"
-                                    stacked
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-sm-6">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <div className="panel-title">
-                                    Justified Tabs
+                                <hr />
+                                <p>Justified</p>
+                                <div style={{ minHeight: 40 }}>
+                                    <Nav
+                                        navStyle="light-tabs"
+                                        justified
+                                        activeKey={this.state.tab}
+                                        onSelect={this.actions.selectTab}
+                                    >
+                                        <NavItem eventKey={1}>Item 1</NavItem>
+                                        <NavItem eventKey={2}>Item 2</NavItem>
+                                        <NavItem eventKey={3}>Item 3</NavItem>
+                                        <NavItem eventKey={4}>Item 4</NavItem>
+                                    </Nav>
                                 </div>
-                            </div>
-                            <div className="panel-body" style={{ minHeight: 80 }}>
-                                <Nav
-                                    navStyle="tabs"
-                                    justified
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-6">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <div className="panel-title">
-                                    Justified Pills
-                                </div>
-                            </div>
-                            <div className="panel-body" style={{ minHeight: 80 }}>
-                                <Nav
-                                    navStyle="pills"
-                                    justified
-                                    activeKey={this.state.tab}
-                                    onSelect={this.actions.selectTab}
-                                >
-                                    <NavItem eventKey={1}>Item 1</NavItem>
-                                    <NavItem eventKey={2}>Item 2</NavItem>
-                                    <NavItem eventKey={3}>Item 3</NavItem>
-                                    <NavItem eventKey={4}>Item 4</NavItem>
-                                </Nav>
                             </div>
                         </div>
                     </div>

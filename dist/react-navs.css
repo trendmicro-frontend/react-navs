@@ -1,4 +1,4 @@
-/*! react-navs v0.5.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.6.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---nav---1zbOb {
   margin-bottom: 0;
   padding-left: 0;
@@ -105,10 +105,10 @@
   border-top: 2px solid #db3d44;
   padding-top: 7px;
 }
-.navs---nav-pills---Du2bd > li {
+.navs---nav-light-tabs---2sgeU > li {
   float: left;
 }
-.navs---nav-pills---Du2bd > li > a {
+.navs---nav-light-tabs---2sgeU > li > a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 13px;
   color: #777;
@@ -116,49 +116,54 @@
   min-width: 80px;
   text-align: center;
 }
-.navs---nav-pills---Du2bd > li > a:hover {
+.navs---nav-light-tabs---2sgeU > li > a:hover {
   color: #777;
   background-color: #fff;
   border-bottom: 2px solid #bbb;
   padding-bottom: 10px;
 }
-.navs---nav-pills---Du2bd > li > a:focus {
+.navs---nav-light-tabs---2sgeU > li > a:focus {
   background-color: #fff;
 }
-.navs---nav-pills---Du2bd > li + li {
+.navs---nav-light-tabs---2sgeU > li + li {
   margin-left: 1px;
 }
-.navs---nav-pills---Du2bd > li.navs---active---2-a32 > a,
-.navs---nav-pills---Du2bd > li.navs---active---2-a32 > a:hover,
-.navs---nav-pills---Du2bd > li.navs---active---2-a32 > a:focus {
+.navs---nav-light-tabs---2sgeU > li.navs---active---2-a32 > a,
+.navs---nav-light-tabs---2sgeU > li.navs---active---2-a32 > a:hover,
+.navs---nav-light-tabs---2sgeU > li.navs---active---2-a32 > a:focus {
   color: #222;
   font-weight: bold;
   background-color: #fff;
   border-bottom: 2px solid #db3d44;
   padding-bottom: 10px;
 }
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li > a:hover {
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li > a:hover {
   color: #777;
   background-color: #fff;
   border-bottom: 2px solid #bbb;
   padding-bottom: 10px;
 }
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li.navs---active---2-a32 > a,
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:hover,
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:focus {
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li.navs---active---2-a32 > a,
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:hover,
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:focus {
   color: #222;
   font-weight: bold;
   background-color: #fff;
   border-bottom: 2px solid #db3d44;
   padding-bottom: 10px;
 }
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li > a {
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li > a {
   background-color: #fff;
   padding-bottom: 12px;
   border-bottom: 0;
 }
-.navs---nav-pills---Du2bd.navs---nav-justified---10iqz > li + li > a {
+.navs---nav-light-tabs---2sgeU.navs---nav-justified---10iqz > li + li > a {
   border-left: 0;
+}
+.navs---nav-panel-tabs---3rU6S.navs---nav-justified---10iqz > li.navs---active---2-a32 > a,
+.navs---nav-panel-tabs---3rU6S.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:hover,
+.navs---nav-panel-tabs---3rU6S.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:focus {
+  border-bottom: 0;
 }
 .navs---nav-justified---10iqz {
   width: 100%;
@@ -194,11 +199,6 @@
   background-color: #fff;
   cursor: default;
 }
-.navs---nav-justified---10iqz.navs---no-bottom-border---2Fvqd > li.navs---active---2-a32 > a,
-.navs---nav-justified---10iqz.navs---no-bottom-border---2Fvqd > li.navs---active---2-a32 > a:hover,
-.navs---nav-justified---10iqz.navs---no-bottom-border---2Fvqd > li.navs---active---2-a32 > a:focus {
-  border-bottom: 0;
-}
 .navs---nav-justified---10iqz > .navs---dropdown---1yvIZ .navs---dropdown-menu---1fkH0 {
   top: auto;
   left: auto;
@@ -209,29 +209,6 @@
 .navs---nav-stacked---32oCw > li + li {
   margin-top: 2px;
   margin-left: 0;
-}
-.navs---nav-tabs-justified---3pRbt {
-  border-bottom: 0;
-}
-.navs---nav-tabs-justified---3pRbt > li > a {
-  margin-right: 0;
-  border-radius: 3px;
-}
-.navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a,
-.navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a:hover,
-.navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a:focus {
-  border: 1px solid #ccc;
-}
-@media (min-width: 768px) {
-  .navs---nav-tabs-justified---3pRbt > li > a {
-    border-bottom: 1px solid #ccc;
-    border-radius: 3px 3px 0 0;
-  }
-  .navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a,
-  .navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a:hover,
-  .navs---nav-tabs-justified---3pRbt > .navs---active---2-a32 > a:focus {
-    border-bottom-color: #fff;
-  }
 }
 
 /*# sourceMappingURL=react-navs.css.map*/
