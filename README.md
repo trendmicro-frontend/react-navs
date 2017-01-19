@@ -70,7 +70,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     </tr>
     <tr>
       <td>navStyle</td>
-      <td>One of: 'tabs', 'light-tabs', 'panel-tabs'</td>
+      <td>One of:<br/>'tabs'<br/>'light-tabs'<br/>'panel-tabs'</td>
       <td>'tabs'</td>
       <td>Component visual or contextual style variants.</td>
     </tr>
