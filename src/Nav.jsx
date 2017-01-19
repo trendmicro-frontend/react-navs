@@ -13,10 +13,10 @@ export default class extends Component {
         // Component visual or contextual style variants.
         navStyle: PropTypes.oneOf([
             'tabs',
-            'pills',
+            'light-tabs',
             'panel-tabs'
         ]),
-        // Make tabs or pills equal widths of their parent at screens wider than 768px.
+        // Make tabs equal widths of their parent at screens wider than 768px.
         // On smaller screens, the nav links are stacked.
         justified: PropTypes.bool,
         // Position NavItem vertically.
@@ -69,9 +69,9 @@ export default class extends Component {
                     className,
                     styles.nav,
                     { [styles.navTabs]: navStyle === 'tabs' },
-                    { [styles.navPills]: navStyle === 'pills' },
+                    { [styles.navLightTabs]: navStyle === 'light-tabs' },
+                    { [styles.navPanelTabs]: navStyle === 'panel-tabs' },
                     { [styles.navJustified]: justified || navStyle === 'panel-tabs' },
-                    { [styles.noBottomBorder]: navStyle === 'panel-tabs' },
                     { [styles.navStacked]: stacked }
                 )}
             >

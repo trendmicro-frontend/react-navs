@@ -70,7 +70,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     </tr>
     <tr>
       <td>navStyle</td>
-      <td>One of: 'tabs', 'pills', 'panel-tabs'</td>
+      <td>One of: 'tabs', 'light-tabs', 'panel-tabs'</td>
       <td>'tabs'</td>
       <td>Component visual or contextual style variants.</td>
     </tr>
@@ -78,7 +78,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
       <td>justified</td>
       <td>boolean</td>
       <td>false</td>
-      <td>Make tabs or pills equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.</td>
+      <td>Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.</td>
     </tr>
     <tr>
       <td>stacked</td>
