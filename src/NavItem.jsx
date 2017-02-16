@@ -1,8 +1,8 @@
+import chainedFunction from 'chained-function';
 import classNames from 'classnames';
 import React, { Component, PropTypes } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import Anchor from '@trendmicro/react-anchor';
-import chainedFunction from './chainedFunction';
 import styles from './index.styl';
 
 export default class extends Component {
