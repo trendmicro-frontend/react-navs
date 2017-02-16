@@ -17,7 +17,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 2. At this point you can import `@trendmicro/react-navs` and its styles in your application as follows:
 
   ```js
-  import { Nav, NavItems } from '@trendmicro/react-navs';
+  import { Nav, NavItem } from '@trendmicro/react-navs';
 
   // Be sure to include styles at some point, probably during your bootstraping
   import '@trendmicro/react-navs/dist/react-navs.css';
