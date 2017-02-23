@@ -17,13 +17,18 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 2. At this point you can import `@trendmicro/react-navs` and its styles in your application as follows:
 
   ```js
-  import { Nav, NavItem } from '@trendmicro/react-navs';
+  import { Nav, NavItem, NavDropdown, MenuItem } from '@trendmicro/react-navs';
 
   // Be sure to include styles at some point, probably during your bootstraping
   import '@trendmicro/react-navs/dist/react-navs.css';
+  
+  // Include react-dropdown.css when using NavDropdown
+  import '@trendmicro/react-dropdown/dist/react-dropdown.css'
   ```
 
 ## Usage
+
+### Tabs
 
 ```js
 <Nav
@@ -36,7 +41,56 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     <NavItem eventKey={1}>Item 1</NavItem>
     <NavItem eventKey={2}>Item 2</NavItem>
     <NavItem eventKey={3}>Item 3</NavItem>
-    <NavItem eventKey={4}>Item 4</NavItem>
+    <NavDropdown eventKey={4} title="NavItem 4">
+        <MenuItem eventKey={4.1}>Action</MenuItem>
+        <MenuItem eventKey={4.2}>Another action</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey={4.3}>Separated link</MenuItem>
+    </NavDropdown>
+</Nav>
+```
+
+### Light Tabs
+
+```js
+<Nav
+    navStyle="light-tabs"
+    activeKey={this.state.activeTab}
+    onSelect={(eventKey, event) => {
+        this.setState({ activeTab: eventKey });
+    }}
+>
+    <NavItem eventKey={1}>Item 1</NavItem>
+    <NavItem eventKey={2}>Item 2</NavItem>
+    <NavItem eventKey={3}>Item 3</NavItem>
+    <NavDropdown eventKey={4} title="NavItem 4">
+        <MenuItem eventKey={4.1}>Action</MenuItem>
+        <MenuItem eventKey={4.2}>Another action</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey={4.3}>Separated link</MenuItem>
+    </NavDropdown>
+</Nav>
+```
+
+### Panel Tabs
+
+```js
+<Nav
+    navStyle="panel-tabs"
+    activeKey={this.state.activeTab}
+    onSelect={(eventKey, event) => {
+        this.setState({ activeTab: eventKey });
+    }}
+>
+    <NavItem eventKey={1}>Item 1</NavItem>
+    <NavItem eventKey={2}>Item 2</NavItem>
+    <NavItem eventKey={3}>Item 3</NavItem>
+    <NavDropdown eventKey={4} title="NavItem 4">
+        <MenuItem eventKey={4.1}>Action</MenuItem>
+        <MenuItem eventKey={4.2}>Another action</MenuItem>
+        <MenuItem divider />
+        <MenuItem eventKey={4.3}>Separated link</MenuItem>
+    </NavDropdown>
 </Nav>
 ```
 
