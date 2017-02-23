@@ -8,21 +8,26 @@ class Nav extends Component {
     static propTypes = {
         // Marks the child NavItem with a matching `href` prop as active.
         activeHref: PropTypes.string,
+
         // Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
         activeKey: PropTypes.any,
+
         // Component visual or contextual style variants.
         navStyle: PropTypes.oneOf([
             'tabs',
             'light-tabs',
             'panel-tabs'
         ]),
-        // Make tabs equal widths of their parent at screens wider than 768px.
-        // On smaller screens, the nav links are stacked.
+
+        // Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.
         justified: PropTypes.bool,
+
         // Position NavItem vertically.
         stacked: PropTypes.bool,
+
         // A callback fired when a NavItem is selected.
         onSelect: PropTypes.func,
+
         // ARIA role for the Nav.
         role: PropTypes.string
     };

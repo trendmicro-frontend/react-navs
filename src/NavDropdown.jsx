@@ -9,13 +9,17 @@ class NavDropdown extends Component {
     static propTypes = {
         ...Dropdown.propTypes,
 
+        // Highlight the nav dropdown as active.
+        active: PropTypes.bool,
+
         title: PropTypes.node.isRequired,
-        noCaret: PropTypes.bool,
-        active: PropTypes.bool
+
+        // Whether to prevent a caret from being rendered next to the title.
+        noCaret: PropTypes.bool
     };
     static defaultProps = {
-        noCaret: false,
-        active: false
+        active: false,
+        noCaret: false
     };
 
     actions = {

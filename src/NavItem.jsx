@@ -7,12 +7,25 @@ import styles from './index.styl';
 
 class NavItem extends Component {
     static propTypes = {
+        // Highlight the nav item as active.
         active: PropTypes.bool,
+
+        // Whether or not component is disabled.
         disabled: PropTypes.bool,
+
+        // Value passed to the `onSelect` handler, useful for identifying the selected nav item.
         eventKey: PropTypes.any,
+
+        // HTML `href` attribute corresponding to `a.href`.
         href: PropTypes.string,
+
+        // Callback fired when the nav item is clicked.
         onClick: PropTypes.func,
+
+        // Callback fired when the nav item is selected.
         onSelect: PropTypes.func,
+
+        // ARIA role for the NavItem.
         role: PropTypes.string
     };
     static defaultProps = {

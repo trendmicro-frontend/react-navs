@@ -60,13 +60,13 @@ role | string | | ARIA role for the Nav.
 
 Name | Type | Default | Description
 :--- | :--- | :------ | :----------
-active | boolean | false |
-disabled | boolean | false
-eventKey | any | |
+active | boolean | false | Highlight the nav item as active.
+disabled | boolean | false | Whether or not component is disabled.
+eventKey | any | | Value passed to the `onSelect` handler, useful for identifying the selected nav item.
 href | string | |
-onClick | function(event) | |
-onSelect | function(eventKey, event) | |
-role | string | |
+onClick | function(event) | | Callback fired when the nav item is clicked.
+onSelect | function(eventKey, event) | | Callback fired when the nav item is selected.
+role | string | | ARIA role for the NavItem.
 
 #### NavDropdown
 
@@ -82,9 +82,9 @@ onToggle | function(boolean) | | A callback fired when the Dropdown wishes to ch
 onSelect | function(eventKey, event) | | A callback fired when a menu item is selected.
 role | string | | If `'menuitem'`, causes the dropdown to behave like a menu item rather than a menu button.
 rootCloseEvent | 'click'|'mousedown' | | Which event when fired outside the component will cause it to be closed.
+active | boolean | false | Highlight the nav dropdown as active.
 title | node | |
-noCaret | boolean | |
-active | boolean | |
+noCaret | boolean | false | Whether to prevent a caret from being rendered next to the title.
 
 #### MenuItem
 
