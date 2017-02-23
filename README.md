@@ -46,118 +46,59 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 
 #### Nav
 
-<table>
-  <thead>
-    <tr>
-      <th align="left">Name</th>
-      <th align="left">Type</th>
-      <th align="left">Default</th>
-      <th align="left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>activeHref</td>
-      <td>string</td>
-      <td></td>
-      <td>Marks the child NavItem with a matching `href` prop as active.</td>
-    </tr>
-    <tr>
-      <td>activeKey</td>
-      <td>any</td>
-      <td></td>
-      <td>Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.</td>
-    </tr>
-    <tr>
-      <td>navStyle</td>
-      <td>One of:<br/>'tabs'<br/>'light-tabs'<br/>'panel-tabs'</td>
-      <td>'tabs'</td>
-      <td>Component visual or contextual style variants.</td>
-    </tr>
-    <tr>
-      <td>justified</td>
-      <td>boolean</td>
-      <td>false</td>
-      <td>Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.</td>
-    </tr>
-    <tr>
-      <td>stacked</td>
-      <td>boolean</td>
-      <td>false</td>
-      <td>Position NavItem vertically.</td>
-    </tr>
-    <tr>
-      <td>onSelect</td>
-      <td>function(eventKey, event)</td>
-      <td></td>
-      <td>A callback fired when a NavItem is selected.</td>
-    </tr>
-    <tr>
-      <td>role</td>
-      <td>string</td>
-      <td></td>
-      <td>ARIA role for the Nav.</td>
-    </tr>
-  </tbody>
-</table>
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+activeHref | string | | Marks the child NavItem with a matching `href` prop as active.
+activeKey | any | | Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
+navStyle | One of:<br/>'tabs'<br/>'light-tabs'<br/>'panel-tabs' | 'tabs' | Component visual or contextual style variants.
+justified | boolean | false | Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.
+stacked | boolean | false | Position NavItem vertically.
+onSelect | function(eventKey, event) | | A callback fired when a NavItem is selected.
+role | string | | ARIA role for the Nav.
 
 #### NavItem
 
-<table>
-  <thead>
-    <tr>
-      <th align="left">Name</th>
-      <th align="left">Type</th>
-      <th align="left">Default</th>
-      <th align="left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>active</td>
-      <td>boolean</td>
-      <td>false</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>disabled</td>
-      <td>boolean</td>
-      <td>false</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>eventKey</td>
-      <td>any</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>href</td>
-      <td>string</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>onClick</td>
-      <td>function(event)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>onSelect</td>
-      <td>function(eventKey, event)</td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>role</td>
-      <td>string</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+active | boolean | false |
+disabled | boolean | false
+eventKey | any | |
+href | string | |
+onClick | function(event) | |
+onSelect | function(eventKey, event) | |
+role | string | |
 
+#### NavDropdown
+
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+componentClass | string|component | | A custom element for this component
+dropup | boolean | false | The menu will open above the dropdown button, instead of below it.
+disabled | boolean | false | Whether or not component is disabled.
+pullRight | boolean | false | Align the menu to the right side of the Dropdown toggle.
+open | boolean | false | Whether or not the Dropdown is visible.
+onClose | function(event) | | A callback fired when the Dropdown closes.
+onToggle | function(boolean) | | A callback fired when the Dropdown wishes to change visibility. Called with the requested `open` value.
+onSelect | function(eventKey, event) | | A callback fired when a menu item is selected.
+role | string | | If `'menuitem'`, causes the dropdown to behave like a menu item rather than a menu button.
+rootCloseEvent | 'click'|'mousedown' | | Which event when fired outside the component will cause it to be closed.
+title | node | |
+noCaret | boolean | |
+active | boolean | |
+
+#### MenuItem
+
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+active | boolean | false | Highlight the menu item as active.
+disabled | boolean | false | Disable the menu item, making it unselectable.
+divider | boolean | false | Style the menu item as a horizontal rule, providing visual separation between groups of menu items.
+eventKey | any | | Value passed to the `onSelect` handler, useful for identifying the selected menu item.
+header | boolean | false | Style the menu item as a header label, useful for describing a group of menu items.
+href | string | | HTML `href` attribute corresponding to `a.href`.
+onClick | function(event) | | Callback fired when the menu item is clicked.
+onSelect | function(eventKey, event) | | Callback fired when the menu item is selected.
+ 
 ## License
 
 MIT

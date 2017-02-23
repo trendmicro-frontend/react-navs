@@ -4,7 +4,7 @@ import React, { cloneElement, Component, PropTypes } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import styles from './index.styl';
 
-export default class extends Component {
+class Nav extends Component {
     static propTypes = {
         // Marks the child NavItem with a matching `href` prop as active.
         activeHref: PropTypes.string,
@@ -97,3 +97,5 @@ export default class extends Component {
         );
     }
 }
+
+export default Nav;

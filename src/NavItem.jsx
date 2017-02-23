@@ -5,7 +5,7 @@ import shallowCompare from 'react-addons-shallow-compare';
 import Anchor from '@trendmicro/react-anchor';
 import styles from './index.styl';
 
-export default class extends Component {
+class NavItem extends Component {
     static propTypes = {
         active: PropTypes.bool,
         disabled: PropTypes.bool,
@@ -68,3 +68,5 @@ export default class extends Component {
         );
     }
 }
+
+export default NavItem;
