@@ -214,33 +214,6 @@ module.exports = _Anchor2.default;
 
 /***/ }),
 
-/***/ "../node_modules/@trendmicro/react-buttons/dist/react-buttons.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("../node_modules/css-loader/index.js!../node_modules/@trendmicro/react-buttons/dist/react-buttons.css");
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__("../node_modules/style-loader/addStyles.js")(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../css-loader/index.js!./react-buttons.css", function() {
-			var newContent = require("!!../../../css-loader/index.js!./react-buttons.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
 /***/ "../node_modules/@trendmicro/react-buttons/lib/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2528,21 +2501,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "../node_modules/css-loader/index.js!../node_modules/@trendmicro/react-buttons/dist/react-buttons.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/css-base.js")();
-// imports
-
-
-// module
-exports.push([module.i, "/*! react-buttons v1.0.0-alpha.2 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-buttons */\n.buttons---btn---2jZHN {\n  display: inline-block;\n  min-width: 80px;\n  padding: 5px 12px;\n  margin-bottom: 0;\n  font-size: 13px;\n  font-weight: normal;\n  line-height: 20px;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  touch-action: manipulation;\n  cursor: pointer;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 3px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.buttons---btn---2jZHN:focus,\n.buttons---btn---2jZHN:active:focus,\n.buttons---btn---2jZHN.buttons---active---2-a32:focus,\n.buttons---btn---2jZHN.buttons---focus---1kVJZ,\n.buttons---btn---2jZHN:active.buttons---focus---1kVJZ,\n.buttons---btn---2jZHN.buttons---active---2-a32.buttons---focus---1kVJZ {\n  outline: none;\n}\n.buttons---btn---2jZHN:hover,\n.buttons---btn---2jZHN.buttons---hover---42FF2,\n.buttons---btn---2jZHN:focus,\n.buttons---btn---2jZHN.buttons---focus---1kVJZ {\n  color: #222;\n  text-decoration: none;\n}\n.buttons---btn---2jZHN:active,\n.buttons---btn---2jZHN.buttons---active---2-a32 {\n  outline: none;\n  background-image: none;\n  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n}\n.buttons---btn---2jZHN.buttons---disabled---eCY9b,\n.buttons---btn---2jZHN[disabled],\nfieldset[disabled] .buttons---btn---2jZHN {\n  cursor: not-allowed;\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n}\na .buttons---btn---2jZHN.buttons---disabled---eCY9b,\nfieldset[disabled] a .buttons---btn---2jZHN {\n  pointer-events: none;\n}\n.buttons---btn---2jZHN + .buttons---btn---2jZHN {\n  margin-left: 8px;\n}\n.buttons---btn---2jZHN.buttons---btn-icon-only---NYhkW {\n  min-width: 0;\n  padding-left: 0;\n  padding-right: 0;\n  width: 42px;\n}\n.buttons---btn---2jZHN > [class*=\"loader-container\"] {\n  display: inline-block;\n  margin-top: 2px;\n  margin-right: 8px;\n}\n.buttons---btn-default---1wWXD {\n  color: #222;\n  background-color: #fbfbfb;\n  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -o-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -ms-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: linear-gradient(to bottom, #fbfbfb 0%, #ececec 100%);\n  background-repeat: repeat-x;\n  border-color: #ccc;\n}\n.buttons---btn-default---1wWXD:active,\n.buttons---btn-default---1wWXD.buttons---active---2-a32 {\n  color: #222;\n  background-color: #eee;\n  background-image: none;\n  border-color: #bbb;\n  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.1) inset;\n}\n.buttons---btn-default---1wWXD:focus,\n.buttons---btn-default---1wWXD.buttons---focus---1kVJZ {\n  color: #222;\n  border-color: #0096cc;\n}\n.buttons---btn-default---1wWXD:hover,\n.buttons---btn-default---1wWXD.buttons---hover---42FF2 {\n  color: #222;\n  background-color: #fff;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -moz-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -o-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: -ms-linear-gradient(top, #fff 0%, #f5f5f5 100%);\n  background-image: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);\n  background-repeat: repeat-x;\n  border-color: #999;\n}\n.buttons---btn-default---1wWXD.buttons---disabled---eCY9b:hover,\n.buttons---btn-default---1wWXD[disabled]:hover,\nfieldset[disabled] .buttons---btn-default---1wWXD:hover,\n.buttons---btn-default---1wWXD.buttons---disabled---eCY9b.buttons---hover---42FF2,\n.buttons---btn-default---1wWXD[disabled].buttons---hover---42FF2,\nfieldset[disabled] .buttons---btn-default---1wWXD.buttons---hover---42FF2,\n.buttons---btn-default---1wWXD.buttons---disabled---eCY9b:focus,\n.buttons---btn-default---1wWXD[disabled]:focus,\nfieldset[disabled] .buttons---btn-default---1wWXD:focus,\n.buttons---btn-default---1wWXD.buttons---disabled---eCY9b.buttons---focus---1kVJZ,\n.buttons---btn-default---1wWXD[disabled].buttons---focus---1kVJZ,\nfieldset[disabled] .buttons---btn-default---1wWXD.buttons---focus---1kVJZ {\n  background-color: #fbfbfb;\n  background-image: -webkit-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -moz-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -o-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: -ms-linear-gradient(top, #fbfbfb 0%, #ececec 100%);\n  background-image: linear-gradient(to bottom, #fbfbfb 0%, #ececec 100%);\n  background-repeat: repeat-x;\n  border-color: #ccc;\n}\n.buttons---btn-primary---Wp1wb {\n  color: #fff;\n  background-color: #0096cc;\n  background-image: -webkit-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -moz-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -o-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -ms-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: linear-gradient(to bottom, #00a7e6 0%, #0096cc 100%);\n  background-repeat: repeat-x;\n  border-color: #0095ce;\n}\n.buttons---btn-primary---Wp1wb > [class*=\"loader-container\"] > [class*=\"loader\"] {\n  border-color: rgba(255,255,255,0.4);\n  border-left-color: #fff;\n}\n.buttons---btn-primary---Wp1wb:active,\n.buttons---btn-primary---Wp1wb.buttons---active---2-a32 {\n  color: #fff;\n  background-color: #009ed8;\n  background-image: none;\n  border-color: #00759f;\n  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.15) inset;\n  box-shadow: 0 1px 6px rgba(0,0,0,0.15) inset;\n}\n.buttons---btn-primary---Wp1wb:focus,\n.buttons---btn-primary---Wp1wb.buttons---focus---1kVJZ {\n  color: #fff;\n  border-color: #444;\n  -webkit-box-shadow: 0 0 1px #fff inset;\n  box-shadow: 0 0 1px #fff inset;\n}\n.buttons---btn-primary---Wp1wb:hover,\n.buttons---btn-primary---Wp1wb.buttons---hover---42FF2 {\n  color: #fff;\n  background-color: #1daee5;\n  background-image: -webkit-linear-gradient(top, #1daee5 0%, #00a3df 100%);\n  background-image: -moz-linear-gradient(top, #1daee5 0%, #00a3df 100%);\n  background-image: -o-linear-gradient(top, #1daee5 0%, #00a3df 100%);\n  background-image: -ms-linear-gradient(top, #1daee5 0%, #00a3df 100%);\n  background-image: linear-gradient(to bottom, #1daee5 0%, #00a3df 100%);\n  background-repeat: repeat-x;\n  border-color: #00759f;\n}\n.buttons---btn-primary---Wp1wb.buttons---disabled---eCY9b:hover,\n.buttons---btn-primary---Wp1wb[disabled]:hover,\nfieldset[disabled] .buttons---btn-primary---Wp1wb:hover,\n.buttons---btn-primary---Wp1wb.buttons---disabled---eCY9b.buttons---hover---42FF2,\n.buttons---btn-primary---Wp1wb[disabled].buttons---hover---42FF2,\nfieldset[disabled] .buttons---btn-primary---Wp1wb.buttons---hover---42FF2,\n.buttons---btn-primary---Wp1wb.buttons---disabled---eCY9b:focus,\n.buttons---btn-primary---Wp1wb[disabled]:focus,\nfieldset[disabled] .buttons---btn-primary---Wp1wb:focus,\n.buttons---btn-primary---Wp1wb.buttons---disabled---eCY9b.buttons---focus---1kVJZ,\n.buttons---btn-primary---Wp1wb[disabled].buttons---focus---1kVJZ,\nfieldset[disabled] .buttons---btn-primary---Wp1wb.buttons---focus---1kVJZ {\n  background-color: #0096cc;\n  background-image: -webkit-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -moz-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -o-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: -ms-linear-gradient(top, #00a7e6 0%, #0096cc 100%);\n  background-image: linear-gradient(to bottom, #00a7e6 0%, #0096cc 100%);\n  background-repeat: repeat-x;\n  border-color: #0095ce;\n}\n.buttons---btn-danger---1UUqU {\n  color: #fff;\n  background-color: #db3d44;\n  background-image: -webkit-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -moz-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -o-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -ms-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: linear-gradient(to bottom, #e15054 0%, #db3d44 100%);\n  background-repeat: repeat-x;\n  border-color: #d8262b;\n}\n.buttons---btn-danger---1UUqU:active,\n.buttons---btn-danger---1UUqU.buttons---active---2-a32 {\n  color: #fff;\n  background-color: #e15054;\n  background-image: none;\n  border-color: #c22327;\n  -webkit-box-shadow: 0 1px 6px rgba(0,0,0,0.15) inset;\n  box-shadow: 0 1px 6px rgba(0,0,0,0.15) inset;\n}\n.buttons---btn-danger---1UUqU:focus,\n.buttons---btn-danger---1UUqU.buttons---focus---1kVJZ {\n  color: #fff;\n  border-color: #444;\n  -webkit-box-shadow: 0 0 1px #fff inset;\n  box-shadow: 0 0 1px #fff inset;\n}\n.buttons---btn-danger---1UUqU:hover,\n.buttons---btn-danger---1UUqU.buttons---hover---42FF2 {\n  color: #fff;\n  background-color: #e15f5f;\n  background-image: -webkit-linear-gradient(top, #e15f5f 0%, #e15054 100%);\n  background-image: -moz-linear-gradient(top, #e15f5f 0%, #e15054 100%);\n  background-image: -o-linear-gradient(top, #e15f5f 0%, #e15054 100%);\n  background-image: -ms-linear-gradient(top, #e15f5f 0%, #e15054 100%);\n  background-image: linear-gradient(to bottom, #e15f5f 0%, #e15054 100%);\n  background-repeat: repeat-x;\n  border-color: #c22327;\n}\n.buttons---btn-danger---1UUqU.buttons---disabled---eCY9b:hover,\n.buttons---btn-danger---1UUqU[disabled]:hover,\nfieldset[disabled] .buttons---btn-danger---1UUqU:hover,\n.buttons---btn-danger---1UUqU.buttons---disabled---eCY9b.buttons---hover---42FF2,\n.buttons---btn-danger---1UUqU[disabled].buttons---hover---42FF2,\nfieldset[disabled] .buttons---btn-danger---1UUqU.buttons---hover---42FF2,\n.buttons---btn-danger---1UUqU.buttons---disabled---eCY9b:focus,\n.buttons---btn-danger---1UUqU[disabled]:focus,\nfieldset[disabled] .buttons---btn-danger---1UUqU:focus,\n.buttons---btn-danger---1UUqU.buttons---disabled---eCY9b.buttons---focus---1kVJZ,\n.buttons---btn-danger---1UUqU[disabled].buttons---focus---1kVJZ,\nfieldset[disabled] .buttons---btn-danger---1UUqU.buttons---focus---1kVJZ {\n  background-color: #db3d44;\n  background-image: -webkit-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -moz-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -o-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: -ms-linear-gradient(top, #e15054 0%, #db3d44 100%);\n  background-image: linear-gradient(to bottom, #e15054 0%, #db3d44 100%);\n  background-repeat: repeat-x;\n  border-color: #d8262b;\n}\n.buttons---btn-border---1O58b {\n  color: #222;\n  background-color: #fff;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -moz-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -o-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -ms-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: linear-gradient(to bottom, #fff 0%, #fff 100%);\n  background-image: none false;\n  background-repeat: repeat-x;\n  border-color: #ccc;\n  -webkit-transition: all 0.2s linear 0s;\n  -moz-transition: all 0.2s linear 0s;\n  -o-transition: all 0.2s linear 0s;\n  -ms-transition: all 0.2s linear 0s;\n  transition: all 0.2s linear 0s;\n}\n.buttons---btn-border---1O58b:hover,\n.buttons---btn-border---1O58b.buttons---hover---42FF2 {\n  color: #222;\n  background-color: #f4f4f4;\n  background-image: -webkit-linear-gradient(top, #f4f4f4 0%, #f4f4f4 100%);\n  background-image: -moz-linear-gradient(top, #f4f4f4 0%, #f4f4f4 100%);\n  background-image: -o-linear-gradient(top, #f4f4f4 0%, #f4f4f4 100%);\n  background-image: -ms-linear-gradient(top, #f4f4f4 0%, #f4f4f4 100%);\n  background-image: linear-gradient(to bottom, #f4f4f4 0%, #f4f4f4 100%);\n  background-repeat: repeat-x;\n  border-color: #999;\n}\n.buttons---btn-border---1O58b:focus,\n.buttons---btn-border---1O58b.buttons---focus---1kVJZ {\n  color: #222;\n  border-color: #0096cc;\n}\n.buttons---btn-border---1O58b:active,\n.buttons---btn-border---1O58b.buttons---active---2-a32,\n.buttons---open---1ju75 > .buttons---dropdown-toggle---vMtjL.buttons---btn-border---1O58b {\n  color: #222;\n  background-color: #eee;\n  background-image: none;\n  border-color: #bbb;\n  -webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.1) inset;\n  box-shadow: 0px 1px 2px rgba(0,0,0,0.1) inset;\n}\n.buttons---btn-border---1O58b:active:hover,\n.buttons---btn-border---1O58b.buttons---active---2-a32:hover,\n.buttons---open---1ju75 > .buttons---dropdown-toggle---vMtjL.buttons---btn-border---1O58b:hover,\n.buttons---btn-border---1O58b:active.buttons---hover---42FF2,\n.buttons---btn-border---1O58b.buttons---active---2-a32.buttons---hover---42FF2,\n.buttons---open---1ju75 > .buttons---dropdown-toggle---vMtjL.buttons---btn-border---1O58b.buttons---hover---42FF2,\n.buttons---btn-border---1O58b:active:focus,\n.buttons---btn-border---1O58b.buttons---active---2-a32:focus,\n.buttons---open---1ju75 > .buttons---dropdown-toggle---vMtjL.buttons---btn-border---1O58b:focus,\n.buttons---btn-border---1O58b:active.buttons---focus---1kVJZ,\n.buttons---btn-border---1O58b.buttons---active---2-a32.buttons---focus---1kVJZ,\n.buttons---open---1ju75 > .buttons---dropdown-toggle---vMtjL.buttons---btn-border---1O58b.buttons---focus---1kVJZ {\n  color: #222;\n  border-color: #bbb;\n  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;\n}\n.buttons---btn-border---1O58b.buttons---disabled---eCY9b,\n.buttons---btn-border---1O58b[disabled],\nfieldset[disabled] .buttons---btn-border---1O58b {\n  opacity: 0.4;\n  -ms-filter: \"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)\";\n  filter: alpha(opacity=40);\n  cursor: not-allowed;\n}\n.buttons---btn-border---1O58b.buttons---disabled---eCY9b:hover,\n.buttons---btn-border---1O58b[disabled]:hover,\nfieldset[disabled] .buttons---btn-border---1O58b:hover,\n.buttons---btn-border---1O58b.buttons---disabled---eCY9b.buttons---hover---42FF2,\n.buttons---btn-border---1O58b[disabled].buttons---hover---42FF2,\nfieldset[disabled] .buttons---btn-border---1O58b.buttons---hover---42FF2,\n.buttons---btn-border---1O58b.buttons---disabled---eCY9b:focus,\n.buttons---btn-border---1O58b[disabled]:focus,\nfieldset[disabled] .buttons---btn-border---1O58b:focus,\n.buttons---btn-border---1O58b.buttons---disabled---eCY9b.buttons---focus---1kVJZ,\n.buttons---btn-border---1O58b[disabled].buttons---focus---1kVJZ,\nfieldset[disabled] .buttons---btn-border---1O58b.buttons---focus---1kVJZ {\n  background-color: #fff;\n  background-image: -webkit-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -moz-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -o-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: -ms-linear-gradient(top, #fff 0%, #fff 100%);\n  background-image: linear-gradient(to bottom, #fff 0%, #fff 100%);\n  background-repeat: repeat-x;\n  border-color: #ccc;\n}\n.buttons---btn-link---1xwS4 {\n  padding-right: 0;\n  padding-left: 0;\n  font-weight: normal;\n  color: #0096cc;\n  border-radius: 0;\n}\n.buttons---btn-link---1xwS4,\n.buttons---btn-link---1xwS4:active,\n.buttons---btn-link---1xwS4.buttons---active---2-a32,\n.buttons---btn-link---1xwS4.buttons---disabled---eCY9b,\n.buttons---btn-link---1xwS4[disabled],\nfieldset[disabled] .buttons---btn-link---1xwS4 {\n  background-color: transparent;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\n.buttons---btn-link---1xwS4,\n.buttons---btn-link---1xwS4:hover,\n.buttons---btn-link---1xwS4.buttons---hover---42FF2,\n.buttons---btn-link---1xwS4:focus,\n.buttons---btn-link---1xwS4:active {\n  border-color: transparent;\n}\n.buttons---btn-link---1xwS4:hover,\n.buttons---btn-link---1xwS4.buttons---hover---42FF2,\n.buttons---btn-link---1xwS4:focus {\n  color: #db3d44;\n  text-decoration: underline;\n  background-color: transparent;\n}\n.buttons---btn-link---1xwS4.buttons---disabled---eCY9b:hover,\n.buttons---btn-link---1xwS4[disabled]:hover,\nfieldset[disabled] .buttons---btn-link---1xwS4:hover,\n.buttons---btn-link---1xwS4.buttons---disabled---eCY9b.buttons---hover---42FF2,\n.buttons---btn-link---1xwS4[disabled].buttons---hover---42FF2,\nfieldset[disabled] .buttons---btn-link---1xwS4.buttons---hover---42FF2,\n.buttons---btn-link---1xwS4.buttons---disabled---eCY9b:focus,\n.buttons---btn-link---1xwS4[disabled]:focus,\nfieldset[disabled] .buttons---btn-link---1xwS4:focus,\n.buttons---btn-link---1xwS4.buttons---disabled---eCY9b.buttons---focus---1kVJZ,\n.buttons---btn-link---1xwS4[disabled].buttons---focus---1kVJZ,\nfieldset[disabled] .buttons---btn-link---1xwS4.buttons---focus---1kVJZ {\n  color: #e6e6e6;\n  text-decoration: none;\n}\n.buttons---btn-lg---2xtUV,\n.buttons---btn-group-lg---3C8An > .buttons---btn---2jZHN {\n  padding: 9px 12px;\n  font-size: 16px;\n  line-height: 24px;\n  border-radius: 3px;\n}\n.buttons---btn-lg---2xtUV.buttons---btn-icon-only---NYhkW,\n.buttons---btn-group-lg---3C8An > .buttons---btn---2jZHN.buttons---btn-icon-only---NYhkW {\n  width: 58px;\n}\n.buttons---btn-md---HRR_F,\n.buttons---btn-group-md---3FQVP > .buttons---btn---2jZHN {\n  padding: 5px 12px;\n  font-size: 13px;\n  line-height: 20px;\n  border-radius: 3px;\n}\n.buttons---btn-sm---3cNnY,\n.buttons---btn-group-sm---3_QLf > .buttons---btn---2jZHN {\n  padding: 4px 12px;\n  font-size: 12px;\n  line-height: 18px;\n  border-radius: 3px;\n}\n.buttons---btn-sm---3cNnY.buttons---btn-icon-only---NYhkW,\n.buttons---btn-group-sm---3_QLf > .buttons---btn---2jZHN.buttons---btn-icon-only---NYhkW {\n  width: 36px;\n}\n.buttons---btn-xs---2eEDQ,\n.buttons---btn-group-xs---1c4pb > .buttons---btn---2jZHN {\n  padding: 1px 12px;\n  font-size: 12px;\n  line-height: 18px;\n  border-radius: 3px;\n}\n.buttons---btn-xs---2eEDQ.buttons---btn-icon-only---NYhkW,\n.buttons---btn-group-xs---1c4pb > .buttons---btn---2jZHN.buttons---btn-icon-only---NYhkW {\n  width: 28px;\n}\n.buttons---btn-block---1nSNV {\n  display: block;\n  width: 100%;\n}\n.buttons---btn-block---1nSNV.buttons---btn---2jZHN + .buttons---btn-block---1nSNV.buttons---btn---2jZHN,\n.buttons---btn-block---1nSNV + .buttons---btn-block---1nSNV {\n  margin-left: 0;\n  margin-top: 8px;\n}\ninput[type=\"submit\"].buttons---btn-block---1nSNV,\ninput[type=\"reset\"].buttons---btn-block---1nSNV,\ninput[type=\"button\"].buttons---btn-block---1nSNV {\n  width: 100%;\n}\n.buttons---btn-group---1jaDo,\n.buttons---btn-group-vertical---3Lm1e {\n  position: relative;\n  display: inline-block;\n  vertical-align: top;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN {\n  position: relative;\n  float: left;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:hover,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:hover,\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN.buttons---hover---42FF2,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN.buttons---hover---42FF2,\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:active,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:active,\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN.buttons---active---2-a32,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN.buttons---active---2-a32 {\n  z-index: 2;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:focus,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:focus,\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN.buttons---focus---1kVJZ,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN.buttons---focus---1kVJZ {\n  z-index: 3;\n}\n.buttons---btn-group---1jaDo .buttons---btn---2jZHN + .buttons---btn---2jZHN,\n.buttons---btn-group---1jaDo .buttons---btn---2jZHN + .buttons---btn-group---1jaDo,\n.buttons---btn-group---1jaDo .buttons---btn-group---1jaDo + .buttons---btn---2jZHN,\n.buttons---btn-group---1jaDo .buttons---btn-group---1jaDo + .buttons---btn-group---1jaDo {\n  margin-left: -1px;\n}\n.buttons---btn-group---1jaDo + .buttons---btn-group---1jaDo {\n  margin-left: 8px;\n}\n.buttons---btn-toolbar---2-GfJ {\n  margin-left: -5px;\n  zoom: 1;\n}\n.buttons---btn-toolbar---2-GfJ:before,\n.buttons---btn-toolbar---2-GfJ:after {\n  content: \"\";\n  display: table;\n}\n.buttons---btn-toolbar---2-GfJ:after {\n  clear: both;\n}\n.buttons---btn-toolbar---2-GfJ .buttons---btn---2jZHN,\n.buttons---btn-toolbar---2-GfJ .buttons---btn-group---1jaDo,\n.buttons---btn-toolbar---2-GfJ .buttons---input-group---1T18I {\n  float: left;\n}\n.buttons---btn-toolbar---2-GfJ > .buttons---btn---2jZHN,\n.buttons---btn-toolbar---2-GfJ > .buttons---btn-group---1jaDo,\n.buttons---btn-toolbar---2-GfJ > .buttons---input-group---1T18I {\n  margin-left: 5px;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:not(:first-child):not(:last-child):not(.buttons---dropdown-toggle---vMtjL) {\n  border-radius: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:first-child {\n  margin-left: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:first-child:not(:last-child):not(.buttons---dropdown-toggle---vMtjL) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN:last-child:not(:first-child),\n.buttons---btn-group---1jaDo > .buttons---dropdown-toggle---vMtjL:not(:first-child) {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn-group---1jaDo {\n  float: left;\n}\n.buttons---btn-group---1jaDo > .buttons---btn-group---1jaDo:not(:first-child):not(:last-child) > .buttons---btn---2jZHN {\n  border-radius: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn-group---1jaDo:first-child:not(:last-child) > .buttons---btn---2jZHN:last-child,\n.buttons---btn-group---1jaDo > .buttons---btn-group---1jaDo:first-child:not(:last-child) > .buttons---dropdown-toggle---vMtjL {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn-group---1jaDo:last-child:not(:first-child) > .buttons---btn---2jZHN:first-child {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.buttons---btn-group---1jaDo .buttons---dropdown-toggle---vMtjL:active,\n.buttons---btn-group---1jaDo.buttons---open---1ju75 .buttons---dropdown-toggle---vMtjL {\n  outline: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo > .buttons---btn---2jZHN {\n  display: block;\n  float: none;\n  width: 100%;\n  max-width: 100%;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo {\n  zoom: 1;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:before,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:after {\n  content: \"\";\n  display: table;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:after {\n  clear: both;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo > .buttons---btn---2jZHN {\n  float: none;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN + .buttons---btn---2jZHN,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN + .buttons---btn-group---1jaDo,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo + .buttons---btn---2jZHN,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo + .buttons---btn-group---1jaDo {\n  margin-top: -1px;\n  margin-left: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:not(:first-child):not(:last-child) {\n  border-radius: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:first-child:not(:last-child) {\n  border-top-radius: 3px;\n  border-bottom-radius: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn---2jZHN:last-child:not(:first-child) {\n  border-top-radius: 0;\n  border-bottom-radius: 3px;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:not(:first-child):not(:last-child) > .buttons---btn---2jZHN {\n  border-radius: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:first-child:not(:last-child) > .buttons---btn---2jZHN:last-child,\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:first-child:not(:last-child) > .buttons---dropdown-toggle---vMtjL {\n  border-bottom-radius: 0;\n}\n.buttons---btn-group-vertical---3Lm1e > .buttons---btn-group---1jaDo:last-child:not(:first-child) > .buttons---btn---2jZHN:first-child {\n  border-top-radius: 0;\n}\n.buttons---btn-group-justified---3qB9u {\n  display: table;\n  width: 100%;\n  table-layout: fixed;\n  border-collapse: separate;\n}\n.buttons---btn-group-justified---3qB9u > .buttons---btn---2jZHN,\n.buttons---btn-group-justified---3qB9u > .buttons---btn-group---1jaDo {\n  float: none;\n  display: table-cell;\n  width: 1%;\n}\n.buttons---btn-group-justified---3qB9u > .buttons---btn-group---1jaDo .buttons---btn---2jZHN {\n  width: 100%;\n}\n.buttons---btn-group-justified---3qB9u > .buttons---btn-group---1jaDo .buttons---dropdown-menu---1fkH0 {\n  left: auto;\n}\n.buttons---dropdown-toggle---vMtjL {\n  min-width: 0;\n}\n.buttons---dropdown-toggle---vMtjL.buttons---btn---2jZHN {\n  text-align: left;\n  padding-left: 12px;\n  padding-right: 12px;\n}\n.buttons---dropdown-toggle---vMtjL.buttons---btn-icon-only---NYhkW {\n  text-align: center;\n}\n.buttons---dropdown-toggle---vMtjL.buttons---btn-link---1xwS4 {\n  color: #222;\n  padding-left: 0;\n  padding-right: 0;\n  text-decoration: none;\n}\n.buttons---dropdown-toggle---vMtjL.buttons---btn-link---1xwS4:hover,\n.buttons---dropdown-toggle---vMtjL.buttons---btn-link---1xwS4:hover > * {\n  color: #0096cc;\n}\n.buttons---btn-group---1jaDo > .buttons---btn---2jZHN + .buttons---dropdown-toggle---vMtjL {\n  padding-left: 8px;\n  padding-right: 8px;\n  min-width: 0;\n}\n.buttons---btn-group---1jaDo > .buttons---btn-lg---2xtUV + .buttons---dropdown-toggle---vMtjL {\n  padding-left: 12px;\n  padding-right: 12px;\n}\n[data-toggle=\"buttons\"] > .buttons---btn---2jZHN input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .buttons---btn-group---1jaDo > .buttons---btn---2jZHN input[type=\"radio\"],\n[data-toggle=\"buttons\"] > .buttons---btn---2jZHN input[type=\"checkbox\"],\n[data-toggle=\"buttons\"] > .buttons---btn-group---1jaDo > .buttons---btn---2jZHN input[type=\"checkbox\"] {\n  position: absolute;\n  clip: rect(0, 0, 0, 0);\n  pointer-events: none;\n}\n.buttons---btn---2jZHN.buttons---btn-icon-only---NYhkW .fa {\n  margin-right: 0;\n}\n.buttons---btn---2jZHN .fa {\n  font-size: 14px;\n  margin-right: 8px;\n}\n.buttons---btn---2jZHN i.fa,\n.buttons---btn---2jZHN span.fa {\n  font-size: 14px;\n  color: #666;\n}\n.buttons---btn-primary---Wp1wb i.fa,\n.buttons---btn-danger---1UUqU i.fa,\n.buttons---btn-primary---Wp1wb span.fa,\n.buttons---btn-danger---1UUqU span.fa {\n  color: inherit;\n}\n.buttons---btn-lg---2xtUV.buttons---btn---2jZHN i.fa,\n.buttons---btn-sm---3cNnY.buttons---btn---2jZHN i.fa,\n.buttons---btn-xs---2eEDQ.buttons---btn---2jZHN i.fa,\n.buttons---btn-lg---2xtUV.buttons---btn---2jZHN span.fa,\n.buttons---btn-sm---3cNnY.buttons---btn---2jZHN span.fa,\n.buttons---btn-xs---2eEDQ.buttons---btn---2jZHN span.fa {\n  font-size: inherit;\n}\n.buttons---btn-lg---2xtUV.buttons---btn---2jZHN i.svg,\n.buttons---btn-lg---2xtUV.buttons---btn---2jZHN span.svg {\n  width: 24px;\n  height: 24px;\n}\n.buttons---btn---2jZHN i.svg,\n.buttons---btn---2jZHN span.svg {\n  width: 16px;\n  height: 16px;\n}\n.buttons---btn-sm---3cNnY.buttons---btn---2jZHN i.svg,\n.buttons---btn-xs---2eEDQ.buttons---btn---2jZHN i.svg,\n.buttons---btn-sm---3cNnY.buttons---btn---2jZHN span.svg,\n.buttons---btn-xs---2eEDQ.buttons---btn---2jZHN span.svg {\n  width: 12px;\n  height: 12px;\n}\n\n/*# sourceMappingURL=react-buttons.css.map*/", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ "../node_modules/css-loader/index.js!../node_modules/@trendmicro/react-dropdown/dist/react-dropdown.css":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2611,6 +2569,106 @@ exports.locals = {
 	"dropdownMenu": "dropdown-menu---2R-2v",
 	"nav-stacked": "nav-stacked---3F58K",
 	"navStacked": "nav-stacked---3F58K"
+};
+
+/***/ }),
+
+/***/ "../node_modules/css-loader/index.js?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./Navbar.styl":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../node_modules/css-loader/lib/css-base.js")();
+// imports
+
+
+// module
+exports.push([module.i, ".container-fluid---2Brsk {\n  padding-right: 15px;\n  padding-left: 15px;\n  margin-right: auto;\n  margin-left: auto;\n}\n.sr-only---2yAEF {\n  position: absolute;\n  width: 1px;\n  height: 1px;\n  padding: 0;\n  margin: -1px;\n  overflow: hidden;\n  clip: rect(0, 0, 0, 0);\n  border: 0;\n}\n.collapse---20hv3 {\n  display: none;\n}\n.collapse---20hv3.in---ZKaSV {\n  display: block;\n}\ntr.collapse---20hv3.in---ZKaSV {\n  display: table-row;\n}\ntbody.collapse---20hv3.in---ZKaSV {\n  display: table-row-group;\n}\n.nav---DwEvZ:before,\n.nav---DwEvZ:after,\n.navbar---3CgcW:before,\n.navbar---3CgcW:after,\n.navbar-header---13JWC:before,\n.navbar-header---13JWC:after,\n.navbar-collapse---3PeuQ:before,\n.navbar-collapse---3PeuQ:after {\n  display: table;\n  content: \"\";\n}\n.nav---DwEvZ:after,\n.navbar---3CgcW:after,\n.navbar-header---13JWC:after,\n.navbar-collapse---3PeuQ:after {\n  clear: both;\n}\n.nav---DwEvZ {\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n}\n.navbar---3CgcW {\n  position: relative;\n  min-height: 50px;\n  border: 1px solid transparent;\n}\n@media (min-width: 768px) {\n  .navbar---3CgcW {\n    border-radius: 4px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-header---13JWC {\n    float: left;\n  }\n}\n.navbar-collapse---3PeuQ {\n  padding-right: 15px;\n  padding-left: 15px;\n  overflow-x: visible;\n  -webkit-overflow-scrolling: touch;\n  border-top: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);\n  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);\n}\n.navbar-collapse---3PeuQ.in---ZKaSV {\n  overflow-y: auto;\n}\n@media (min-width: 768px) {\n  .navbar-collapse---3PeuQ {\n    width: auto;\n    border-top: 0;\n    -webkit-box-shadow: none;\n    -webkit-box-shadow: none;\n    box-shadow: none;\n  }\n  .navbar-collapse---3PeuQ.collapse---20hv3 {\n    display: block !important;\n    height: auto !important;\n    padding-bottom: 0;\n    overflow: visible !important;\n  }\n  .navbar-collapse---3PeuQ.in---ZKaSV {\n    overflow-y: visible;\n  }\n  .navbar-fixed-top---1gjqn .navbar-collapse---3PeuQ,\n  .navbar-static-top---1XJMz .navbar-collapse---3PeuQ,\n  .navbar-fixed-bottom---2eN_k .navbar-collapse---3PeuQ {\n    padding-right: 0;\n    padding-left: 0;\n  }\n}\n.navbar-fixed-top---1gjqn .navbar-collapse---3PeuQ,\n.navbar-fixed-bottom---2eN_k .navbar-collapse---3PeuQ {\n  max-height: 340px;\n}\n@media (max-device-width: 480px) and (orientation: landscape) {\n  .navbar-fixed-top---1gjqn .navbar-collapse---3PeuQ,\n  .navbar-fixed-bottom---2eN_k .navbar-collapse---3PeuQ {\n    max-height: 200px;\n  }\n}\n.container---2j6jX > .navbar-header---13JWC,\n.container-fluid---2Brsk > .navbar-header---13JWC,\n.container---2j6jX > .navbar-collapse---3PeuQ,\n.container-fluid---2Brsk > .navbar-collapse---3PeuQ {\n  margin-right: -15px;\n  margin-left: -15px;\n}\n@media (min-width: 768px) {\n  .container---2j6jX > .navbar-header---13JWC,\n  .container-fluid---2Brsk > .navbar-header---13JWC,\n  .container---2j6jX > .navbar-collapse---3PeuQ,\n  .container-fluid---2Brsk > .navbar-collapse---3PeuQ {\n    margin-right: 0;\n    margin-left: 0;\n  }\n}\n.navbar-static-top---1XJMz {\n  z-index: 1000;\n  border-width: 0 0 1px;\n}\n@media (min-width: 768px) {\n  .navbar-static-top---1XJMz {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top---1gjqn,\n.navbar-fixed-bottom---2eN_k {\n  position: fixed;\n  right: 0;\n  left: 0;\n  z-index: 1030;\n}\n@media (min-width: 768px) {\n  .navbar-fixed-top---1gjqn,\n  .navbar-fixed-bottom---2eN_k {\n    border-radius: 0;\n  }\n}\n.navbar-fixed-top---1gjqn {\n  top: 0;\n  border-width: 0 0 1px;\n}\n.navbar-fixed-bottom---2eN_k {\n  bottom: 0;\n  margin-bottom: 0;\n  border-width: 1px 0 0;\n}\n.navbar-brand---1HEM4 {\n  float: left;\n  height: 50px;\n  padding: 15px 15px;\n  font-size: 18px;\n  line-height: 20px;\n}\n.navbar-brand---1HEM4,\n.navbar-brand---1HEM4:hover,\n.navbar-brand---1HEM4:focus {\n  text-decoration: none;\n}\n.navbar-brand---1HEM4 > img {\n  display: block;\n}\n@media (min-width: 768px) {\n  .navbar---3CgcW > .container---2j6jX .navbar-brand---1HEM4,\n  .navbar---3CgcW > .container-fluid---2Brsk .navbar-brand---1HEM4 {\n    margin-left: -15px;\n  }\n}\n.navbar-toggle---2VPJp {\n  position: relative;\n  float: right;\n  padding: 9px 10px;\n  margin-top: 8px;\n  margin-right: 15px;\n  margin-bottom: 8px;\n  background-color: transparent;\n  background-image: none;\n  border: 1px solid transparent;\n  border-radius: 4px;\n  cursor: pointer;\n}\n.navbar-toggle---2VPJp:focus {\n  outline: 0;\n}\n.navbar-toggle---2VPJp .icon-bar---3seAt {\n  display: block;\n  width: 22px;\n  height: 2px;\n  border-radius: 1px;\n}\n.navbar-toggle---2VPJp .icon-bar---3seAt + .icon-bar---3seAt {\n  margin-top: 4px;\n}\n@media (min-width: 768px) {\n  .navbar-toggle---2VPJp {\n    display: none;\n  }\n}\n.navbar-nav---1bmvb {\n  margin: 7.5px -15px;\n}\n.navbar-nav---1bmvb > li > a {\n  padding-top: 10px;\n  padding-bottom: 10px;\n  line-height: 20px;\n}\n@media (max-width: 767px) {\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi {\n    position: static;\n    float: none;\n    width: auto;\n    margin-top: 0;\n    background-color: transparent;\n    border: 0;\n    -webkit-box-shadow: none;\n    -webkit-box-shadow: none;\n    box-shadow: none;\n  }\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a,\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi .dropdown-header---1ghdi {\n    padding: 5px 15px 5px 25px;\n  }\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a {\n    line-height: 20px;\n  }\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a:hover,\n  .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a:focus {\n    background-image: none;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-nav---1bmvb {\n    float: left;\n    margin: 0;\n  }\n  .navbar-nav---1bmvb > li {\n    float: left;\n  }\n  .navbar-nav---1bmvb > li > a {\n    padding-top: 15px;\n    padding-bottom: 15px;\n  }\n}\n.navbar-form---1sg2L {\n  padding: 10px 15px;\n  margin-top: 8px;\n  margin-right: -15px;\n  margin-bottom: 8px;\n  margin-left: -15px;\n  border-top: 1px solid transparent;\n  border-bottom: 1px solid transparent;\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);\n  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);\n  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), 0 1px 0 rgba(255,255,255,0.1);\n}\n@media (min-width: 768px) {\n  .navbar-form---1sg2L .form-group---377uy {\n    display: inline-block;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form---1sg2L .form-control---17agB {\n    display: inline-block;\n    width: auto;\n    vertical-align: middle;\n  }\n  .navbar-form---1sg2L .form-control-static---6Jy2E {\n    display: inline-block;\n  }\n  .navbar-form---1sg2L .input-group---2fmg- {\n    display: inline-table;\n    vertical-align: middle;\n  }\n  .navbar-form---1sg2L .input-group---2fmg- .input-group-addon---fOpQR,\n  .navbar-form---1sg2L .input-group---2fmg- .input-group-btn---8c2e1,\n  .navbar-form---1sg2L .input-group---2fmg- .form-control---17agB {\n    width: auto;\n  }\n  .navbar-form---1sg2L .input-group---2fmg- > .form-control---17agB {\n    width: 100%;\n  }\n  .navbar-form---1sg2L .control-label---2PlSB {\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form---1sg2L .radio---16q6i,\n  .navbar-form---1sg2L .checkbox---JEaqS {\n    display: inline-block;\n    margin-top: 0;\n    margin-bottom: 0;\n    vertical-align: middle;\n  }\n  .navbar-form---1sg2L .radio---16q6i label,\n  .navbar-form---1sg2L .checkbox---JEaqS label {\n    padding-left: 0;\n  }\n  .navbar-form---1sg2L .radio---16q6i input[type=\"radio\"],\n  .navbar-form---1sg2L .checkbox---JEaqS input[type=\"checkbox\"] {\n    position: relative;\n    margin-left: 0;\n  }\n  .navbar-form---1sg2L .has-feedback---_1-sR .form-control-feedback---SMwWY {\n    top: 0;\n  }\n}\n@media (max-width: 767px) {\n  .navbar-form---1sg2L .form-group---377uy {\n    margin-bottom: 5px;\n  }\n  .navbar-form---1sg2L .form-group---377uy:last-child {\n    margin-bottom: 0;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-form---1sg2L {\n    width: auto;\n    padding-top: 0;\n    padding-bottom: 0;\n    margin-right: 0;\n    margin-left: 0;\n    border: 0;\n    -webkit-box-shadow: none;\n    -webkit-box-shadow: none;\n    box-shadow: none;\n  }\n}\n.navbar-nav---1bmvb > li > .dropdown-menu---1e_zi {\n  margin-top: 0;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n.navbar-fixed-bottom---2eN_k .navbar-nav---1bmvb > li > .dropdown-menu---1e_zi {\n  margin-bottom: 0;\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n}\n.navbar-btn---29Q8O {\n  margin-top: 8px;\n  margin-bottom: 8px;\n}\n.navbar-btn---29Q8O.btn-sm---2ZnkM {\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n.navbar-btn---29Q8O.btn-xs---1Kfje {\n  margin-top: 14px;\n  margin-bottom: 14px;\n}\n.navbar-text---2gvDM {\n  margin-top: 15px;\n  margin-bottom: 15px;\n}\n@media (min-width: 768px) {\n  .navbar-text---2gvDM {\n    float: left;\n    margin-right: 15px;\n    margin-left: 15px;\n  }\n}\n@media (min-width: 768px) {\n  .navbar-left---_8Mhm {\n    float: left !important;\n  }\n  .navbar-right---3KZRg {\n    float: right !important;\n    margin-right: -15px;\n  }\n  .navbar-right---3KZRg ~ .navbar-right---3KZRg {\n    margin-right: 0;\n  }\n}\n.navbar-default---1yc1S {\n  background-color: #f8f8f8;\n  border-color: #e7e7e7;\n}\n.navbar-default---1yc1S .navbar-brand---1HEM4 {\n  color: #777;\n}\n.navbar-default---1yc1S .navbar-brand---1HEM4:hover,\n.navbar-default---1yc1S .navbar-brand---1HEM4:focus {\n  color: #5e5e5e;\n  background-color: transparent;\n}\n.navbar-default---1yc1S .navbar-text---2gvDM {\n  color: #777;\n}\n.navbar-default---1yc1S .navbar-nav---1bmvb > li > a {\n  color: #777;\n}\n.navbar-default---1yc1S .navbar-nav---1bmvb > li > a:hover,\n.navbar-default---1yc1S .navbar-nav---1bmvb > li > a:focus {\n  color: #333;\n  background-color: transparent;\n}\n.navbar-default---1yc1S .navbar-nav---1bmvb > .active---292aa > a,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .active---292aa > a:hover,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .active---292aa > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n.navbar-default---1yc1S .navbar-nav---1bmvb > .disabled---1KUsN > a,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .disabled---1KUsN > a:hover,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .disabled---1KUsN > a:focus {\n  color: #ccc;\n  background-color: transparent;\n}\n.navbar-default---1yc1S .navbar-toggle---2VPJp {\n  border-color: #ddd;\n}\n.navbar-default---1yc1S .navbar-toggle---2VPJp:hover,\n.navbar-default---1yc1S .navbar-toggle---2VPJp:focus {\n  background-color: #ddd;\n}\n.navbar-default---1yc1S .navbar-toggle---2VPJp .icon-bar---3seAt {\n  background-color: #888;\n}\n.navbar-default---1yc1S .navbar-collapse---3PeuQ,\n.navbar-default---1yc1S .navbar-form---1sg2L {\n  border-color: #e7e7e7;\n}\n.navbar-default---1yc1S .navbar-nav---1bmvb > .open---3Nl4h > a,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .open---3Nl4h > a:hover,\n.navbar-default---1yc1S .navbar-nav---1bmvb > .open---3Nl4h > a:focus {\n  color: #555;\n  background-color: #e7e7e7;\n}\n@media (max-width: 767px) {\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a {\n    color: #777;\n  }\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a:hover,\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > li > a:focus {\n    color: #333;\n    background-color: transparent;\n  }\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .active---292aa > a,\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .active---292aa > a:hover,\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .active---292aa > a:focus {\n    color: #555;\n    background-color: #e7e7e7;\n  }\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .disabled---1KUsN > a,\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .disabled---1KUsN > a:hover,\n  .navbar-default---1yc1S .navbar-nav---1bmvb .open---3Nl4h .dropdown-menu---1e_zi > .disabled---1KUsN > a:focus {\n    color: #ccc;\n    background-color: transparent;\n  }\n}\n.navbar-default---1yc1S .navbar-link---3Hly8 {\n  color: #777;\n}\n.navbar-default---1yc1S .navbar-link---3Hly8:hover {\n  color: #333;\n}\n.navbar-default---1yc1S .btn-link---2eykm {\n  color: #777;\n}\n.navbar-default---1yc1S .btn-link---2eykm:hover,\n.navbar-default---1yc1S .btn-link---2eykm:focus {\n  color: #333;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"container-fluid": "container-fluid---2Brsk",
+	"containerFluid": "container-fluid---2Brsk",
+	"sr-only": "sr-only---2yAEF",
+	"srOnly": "sr-only---2yAEF",
+	"collapse": "collapse---20hv3",
+	"collapse": "collapse---20hv3",
+	"in": "in---ZKaSV",
+	"in": "in---ZKaSV",
+	"nav": "nav---DwEvZ",
+	"nav": "nav---DwEvZ",
+	"navbar": "navbar---3CgcW",
+	"navbar": "navbar---3CgcW",
+	"navbar-header": "navbar-header---13JWC",
+	"navbarHeader": "navbar-header---13JWC",
+	"navbar-collapse": "navbar-collapse---3PeuQ",
+	"navbarCollapse": "navbar-collapse---3PeuQ",
+	"navbar-fixed-top": "navbar-fixed-top---1gjqn",
+	"navbarFixedTop": "navbar-fixed-top---1gjqn",
+	"navbar-static-top": "navbar-static-top---1XJMz",
+	"navbarStaticTop": "navbar-static-top---1XJMz",
+	"navbar-fixed-bottom": "navbar-fixed-bottom---2eN_k",
+	"navbarFixedBottom": "navbar-fixed-bottom---2eN_k",
+	"container": "container---2j6jX",
+	"container": "container---2j6jX",
+	"navbar-brand": "navbar-brand---1HEM4",
+	"navbarBrand": "navbar-brand---1HEM4",
+	"navbar-toggle": "navbar-toggle---2VPJp",
+	"navbarToggle": "navbar-toggle---2VPJp",
+	"icon-bar": "icon-bar---3seAt",
+	"iconBar": "icon-bar---3seAt",
+	"navbar-nav": "navbar-nav---1bmvb",
+	"navbarNav": "navbar-nav---1bmvb",
+	"open": "open---3Nl4h",
+	"open": "open---3Nl4h",
+	"dropdown-menu": "dropdown-menu---1e_zi",
+	"dropdownMenu": "dropdown-menu---1e_zi",
+	"dropdown-header": "dropdown-header---1ghdi",
+	"dropdownHeader": "dropdown-header---1ghdi",
+	"navbar-form": "navbar-form---1sg2L",
+	"navbarForm": "navbar-form---1sg2L",
+	"form-group": "form-group---377uy",
+	"formGroup": "form-group---377uy",
+	"form-control": "form-control---17agB",
+	"formControl": "form-control---17agB",
+	"form-control-static": "form-control-static---6Jy2E",
+	"formControlStatic": "form-control-static---6Jy2E",
+	"input-group": "input-group---2fmg-",
+	"inputGroup": "input-group---2fmg-",
+	"input-group-addon": "input-group-addon---fOpQR",
+	"inputGroupAddon": "input-group-addon---fOpQR",
+	"input-group-btn": "input-group-btn---8c2e1",
+	"inputGroupBtn": "input-group-btn---8c2e1",
+	"control-label": "control-label---2PlSB",
+	"controlLabel": "control-label---2PlSB",
+	"radio": "radio---16q6i",
+	"radio": "radio---16q6i",
+	"checkbox": "checkbox---JEaqS",
+	"checkbox": "checkbox---JEaqS",
+	"has-feedback": "has-feedback---_1-sR",
+	"hasFeedback": "has-feedback---_1-sR",
+	"form-control-feedback": "form-control-feedback---SMwWY",
+	"formControlFeedback": "form-control-feedback---SMwWY",
+	"navbar-btn": "navbar-btn---29Q8O",
+	"navbarBtn": "navbar-btn---29Q8O",
+	"btn-sm": "btn-sm---2ZnkM",
+	"btnSm": "btn-sm---2ZnkM",
+	"btn-xs": "btn-xs---1Kfje",
+	"btnXs": "btn-xs---1Kfje",
+	"navbar-text": "navbar-text---2gvDM",
+	"navbarText": "navbar-text---2gvDM",
+	"navbar-left": "navbar-left---_8Mhm",
+	"navbarLeft": "navbar-left---_8Mhm",
+	"navbar-right": "navbar-right---3KZRg",
+	"navbarRight": "navbar-right---3KZRg",
+	"navbar-default": "navbar-default---1yc1S",
+	"navbarDefault": "navbar-default---1yc1S",
+	"active": "active---292aa",
+	"active": "active---292aa",
+	"disabled": "disabled---1KUsN",
+	"disabled": "disabled---1KUsN",
+	"navbar-link": "navbar-link---3Hly8",
+	"navbarLink": "navbar-link---3Hly8",
+	"btn-link": "btn-link---2eykm",
+	"btnLink": "btn-link---2eykm"
 };
 
 /***/ }),
@@ -25439,17 +25497,22 @@ var Nav = (_temp = _class = function (_Component) {
 }(_react.Component), _class.propTypes = {
     // Marks the child NavItem with a matching `href` prop as active.
     activeHref: _react.PropTypes.string,
+
     // Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
     activeKey: _react.PropTypes.any,
+
     // Component visual or contextual style variants.
     navStyle: _react.PropTypes.oneOf(['tabs', 'light-tabs', 'panel-tabs']),
-    // Make tabs equal widths of their parent at screens wider than 768px.
-    // On smaller screens, the nav links are stacked.
+
+    // Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.
     justified: _react.PropTypes.bool,
+
     // Position NavItem vertically.
     stacked: _react.PropTypes.bool,
+
     // A callback fired when a NavItem is selected.
     onSelect: _react.PropTypes.func,
+
     // ARIA role for the Nav.
     role: _react.PropTypes.string
 }, _class.defaultProps = {
@@ -25655,12 +25718,16 @@ var NavDropdown = (_temp2 = _class = function (_Component) {
     return NavDropdown;
 }(_react.Component), _class.propTypes = _extends({}, _reactDropdown2.default.propTypes, {
 
+    // Highlight the nav dropdown as active.
+    active: _react.PropTypes.bool,
+
     title: _react.PropTypes.node.isRequired,
-    noCaret: _react.PropTypes.bool,
-    active: _react.PropTypes.bool
+
+    // Whether to prevent a caret from being rendered next to the title.
+    noCaret: _react.PropTypes.bool
 }), _class.defaultProps = {
-    noCaret: false,
-    active: false
+    active: false,
+    noCaret: false
 }, _temp2);
 exports.default = NavDropdown;
 
@@ -25789,12 +25856,25 @@ var NavItem = (_temp2 = _class = function (_Component) {
 
     return NavItem;
 }(_react.Component), _class.propTypes = {
+    // Highlight the nav item as active.
     active: _react.PropTypes.bool,
+
+    // Whether or not component is disabled.
     disabled: _react.PropTypes.bool,
+
+    // Value passed to the `onSelect` handler, useful for identifying the selected nav item.
     eventKey: _react.PropTypes.any,
+
+    // HTML `href` attribute corresponding to `a.href`.
     href: _react.PropTypes.string,
+
+    // Callback fired when the nav item is clicked.
     onClick: _react.PropTypes.func,
+
+    // Callback fired when the nav item is selected.
     onSelect: _react.PropTypes.func,
+
+    // ARIA role for the NavItem.
     role: _react.PropTypes.string
 }, _class.defaultProps = {
     active: false,
@@ -26110,6 +26190,170 @@ var LightTabs = function LightTabs(_ref) {
 };
 
 exports.default = LightTabs;
+
+/***/ }),
+
+/***/ "./Navbar.jsx":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _class, _temp2;
+
+var _classnames = __webpack_require__("../node_modules/classnames/index.js");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _react = __webpack_require__("../node_modules/react/react.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactButtons = __webpack_require__("../node_modules/@trendmicro/react-buttons/lib/index.js");
+
+var _Navbar = __webpack_require__("./Navbar.styl");
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _default = (_temp2 = _class = function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, _default);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = _default.__proto__ || Object.getPrototypeOf(_default)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            collapseIn: false
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(_default, [{
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props = this.props,
+                name = _props.name,
+                url = _props.url;
+
+
+            return _react2.default.createElement(
+                'nav',
+                {
+                    className: (0, _classnames2.default)(_Navbar2.default.navbar, _Navbar2.default.navbarDefault),
+                    style: { borderRadius: 0 }
+                },
+                _react2.default.createElement(
+                    'div',
+                    { className: _Navbar2.default.containerFluid },
+                    _react2.default.createElement(
+                        'div',
+                        { className: _Navbar2.default.navbarHeader },
+                        _react2.default.createElement(
+                            'button',
+                            {
+                                type: 'button',
+                                className: (0, _classnames2.default)(_Navbar2.default.navbarToggle, _Navbar2.default.collapsed),
+                                onClick: function onClick() {
+                                    _this2.setState({ collapseIn: !_this2.state.collapseIn });
+                                }
+                            },
+                            _react2.default.createElement(
+                                'span',
+                                { className: _Navbar2.default.srOnly },
+                                'Toggle navigation'
+                            ),
+                            _react2.default.createElement('span', { className: _Navbar2.default.iconBar }),
+                            _react2.default.createElement('span', { className: _Navbar2.default.iconBar }),
+                            _react2.default.createElement('span', { className: _Navbar2.default.iconBar })
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#', className: _Navbar2.default.navbarBrand },
+                            name
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        {
+                            className: (0, _classnames2.default)(_Navbar2.default.collapse, _Navbar2.default.navbarCollapse, _defineProperty({}, _Navbar2.default.in, this.state.collapseIn))
+                        },
+                        _react2.default.createElement(
+                            _reactButtons.Button,
+                            {
+                                className: (0, _classnames2.default)(_Navbar2.default.navbarBtn, _Navbar2.default.navbarRight),
+                                btnStyle: 'flat',
+                                onClick: function onClick() {
+                                    window.location = url;
+                                }
+                            },
+                            _react2.default.createElement('i', { className: 'fa fa-github' }),
+                            'GitHub'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return _default;
+}(_react.Component), _class.propTypes = {
+    name: _react.PropTypes.string,
+    url: _react.PropTypes.string
+}, _temp2);
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./Navbar.styl":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("../node_modules/css-loader/index.js?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./Navbar.styl");
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__("../node_modules/style-loader/addStyles.js")(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../node_modules/css-loader/index.js?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./Navbar.styl", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js?camelCase&modules&importLoaders=1&localIdentName=[local]---[hash:base64:5]!../node_modules/stylus-loader/index.js!../node_modules/stylint-loader/index.js!./Navbar.styl");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ }),
 
@@ -26487,8 +26731,6 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 __webpack_require__("../node_modules/trendmicro-ui/dist/css/trendmicro-ui.css");
 
-__webpack_require__("../node_modules/@trendmicro/react-buttons/dist/react-buttons.css");
-
 __webpack_require__("../node_modules/@trendmicro/react-dropdown/dist/react-dropdown.css");
 
 var _react = __webpack_require__("../node_modules/react/react.js");
@@ -26498,6 +26740,10 @@ var _react2 = _interopRequireDefault(_react);
 var _reactDom = __webpack_require__("../node_modules/react-dom/index.js");
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _Navbar = __webpack_require__("./Navbar.jsx");
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
 
 var _Tabs = __webpack_require__("./Tabs.jsx");
 
@@ -26518,8 +26764,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-//import Navbar from './Navbar';
-
 
 var App = function (_React$Component) {
     _inherits(App, _React$Component);
@@ -26547,12 +26791,13 @@ var App = function (_React$Component) {
     _createClass(App, [{
         key: 'render',
         value: function render() {
-            //const name = 'React Buttons';
-            //const url = 'https://github.com/trendmicro-frontend/react-buttons';
+            var name = 'React Navs';
+            var url = 'https://github.com/trendmicro-frontend/react-navs';
 
             return _react2.default.createElement(
                 'div',
                 null,
+                _react2.default.createElement(_Navbar2.default, { name: name, url: url }),
                 _react2.default.createElement(
                     'div',
                     { className: 'container-fluid', style: { padding: '20px 20px 0' } },
@@ -26588,4 +26833,4 @@ _reactDom2.default.render(_react2.default.createElement(App, null), document.get
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?7aa0f8368451b76d7139
+//# sourceMappingURL=bundle.js.map?d82414bf2f299718415f
