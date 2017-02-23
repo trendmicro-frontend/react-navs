@@ -75,13 +75,13 @@ Name | Type | Default | Description
 componentClass | string|component | | A custom element for this component
 dropup | boolean | false | The menu will open above the dropdown button, instead of below it.
 disabled | boolean | false | Whether or not component is disabled.
-pullRight | boolean | false | Align the menu to the right side of the Dropdown toggle.
-open | boolean | false | Whether or not the Dropdown is visible.
-onClose | function(event) | | A callback fired when the Dropdown closes.
-onToggle | function(boolean) | | A callback fired when the Dropdown wishes to change visibility. Called with the requested `open` value.
+pullRight | boolean | false | Align the menu to the right side of the NavDropdown toggle.
+open | boolean | false | Whether or not the dropdown is visible.
+onClose | function(event) | | A callback fired when the dropdown closes.
+onToggle | function(boolean) | | A callback fired when the dropdown wishes to change visibility. Called with the requested `open` value.
 onSelect | function(eventKey, event) | | A callback fired when a menu item is selected.
 role | string | | If `'menuitem'`, causes the dropdown to behave like a menu item rather than a menu button.
-rootCloseEvent | 'click'|'mousedown' | | Which event when fired outside the component will cause it to be closed.
+rootCloseEvent | One of:<br/>'click'<br/>'mousedown' | | Which event when fired outside the component will cause it to be closed.
 active | boolean | false | Highlight the nav dropdown as active.
 title | node | |
 noCaret | boolean | false | Whether to prevent a caret from being rendered next to the title.
