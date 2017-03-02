@@ -14,6 +14,7 @@ class Nav extends Component {
 
         // Component visual or contextual style variants.
         navStyle: PropTypes.oneOf([
+            'navbar',
             'tabs',
             'light-tabs',
             'panel-tabs'
@@ -35,6 +36,12 @@ class Nav extends Component {
         navStyle: 'tabs',
         justified: false,
         stacked: false
+    };
+    static contextTypes = {
+        $tm_navbar: PropTypes.shape({
+            navStyle: PropTypes.string,
+            onSelect: PropTypes.func
+        })
     };
 
     shouldComponentUpdate(nextProps, nextState) {
@@ -65,20 +72,22 @@ class Nav extends Component {
             activeHref,
             ...props
         } = this.props;
+        const navbar = this.context.$tm_navbar;
+        const classes = {
+            [styles.nav]: true,
+            [styles.navbar]: navbar && navStyle === 'navbar',
+            [styles.navTabs]: navStyle === 'tabs',
+            [styles.navLightTabs]: navStyle === 'light-tabs',
+            [styles.navPanelTabs]: navStyle === 'panel-tabs',
+            [styles.navJustified]: justified || navStyle === 'panel-tabs',
+            [styles.navStacked]: stacked
+        };
 
         return (
             <ul
                 {...props}
                 role={role}
-                className={classNames(
-                    className,
-                    styles.nav,
-                    { [styles.navTabs]: navStyle === 'tabs' },
-                    { [styles.navLightTabs]: navStyle === 'light-tabs' },
-                    { [styles.navPanelTabs]: navStyle === 'panel-tabs' },
-                    { [styles.navJustified]: justified || navStyle === 'panel-tabs' },
-                    { [styles.navStacked]: stacked }
-                )}
+                className={classNames(className, classes)}
             >
                 {React.Children.map(children, child => {
                     if (!React.isValidElement(child)) {
@@ -88,7 +97,8 @@ class Nav extends Component {
                     const active = this.isActive(child, activeKey, activeHref);
                     const childOnSelect = chainedFunction(
                         child.props.onSelect,
-                        onSelect
+                        onSelect,
+                        navbar && navbar.onSelect
                     );
 
                     return cloneElement(child, {
