@@ -104,7 +104,7 @@ Name | Type | Default | Description
 :--- | :--- | :------ | :----------
 activeHref | string | | Marks the child NavItem with a matching `href` prop as active.
 activeKey | any | | Marks the NavItem with a matching `eventKey` as active. Has a higher precedence over `activeHref`.
-navStyle | One of:<br/>'tabs'<br/>'light-tabs'<br/>'panel-tabs' | 'tabs' | Component visual or contextual style variants.
+navStyle | One of:<br/>'tabs'<br/>'light-tabs'<br/>'panel-tabs'<br/>'navbar' | 'tabs' | Component visual or contextual style variants.
 justified | boolean | false | Make tabs equal widths of their parent at screens wider than 768px. On smaller screens, the nav links are stacked.
 stacked | boolean | false | Position NavItem vertically.
 onSelect | function(eventKey, event) | | A callback fired when a NavItem is selected.
