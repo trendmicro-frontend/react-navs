@@ -1,4 +1,5 @@
 import 'trendmicro-ui/dist/css/trendmicro-ui.css';
+import '@trendmicro/react-buttons/dist/react-buttons.css';
 import '@trendmicro/react-dropdown/dist/react-dropdown.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
