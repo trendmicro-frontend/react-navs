@@ -2,6 +2,7 @@
 import classNames from 'classnames';
 import React, { Component, PropTypes } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
+import Anchor from '@trendmicro/react-anchor';
 import Dropdown from '@trendmicro/react-dropdown';
 import splitComponentProps from './splitComponentProps';
 
@@ -83,6 +84,8 @@ class NavDropdown extends Component {
 
         const [dropdownProps, toggleProps] = splitComponentProps(props, Dropdown.ControlledComponent);
 
+        toggleProps.componentClass = Anchor;
+
         const dropdownMenuItems = React.Children.map(children, child => {
             if (!React.isValidElement(child)) {
                 return child;
@@ -100,7 +103,7 @@ class NavDropdown extends Component {
                 className={classNames(className, { active })}
                 style={style}
             >
-                <Dropdown.Toggle {...toggleProps} useAnchor>
+                <Dropdown.Toggle {...toggleProps}>
                     {title}
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
