@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@trendmicro/react-anchor": "^0.5.2",
-    "@trendmicro/react-dropdown": "^0.6.1",
+    "@trendmicro/react-dropdown": "^0.6.3",
     "chained-function": "^0.5.0",
     "classnames": "^2.2.5",
     "react-addons-shallow-compare": "^0.14.0 || ^15.0.0"
