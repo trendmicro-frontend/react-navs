@@ -11,6 +11,9 @@ const Tabs = ({ state, actions }) => {
             <div style={{ minHeight: 40 }}>
                 <Nav
                     navStyle="tabs"
+                    style={{
+                        textAlign: 'center'
+                    }}
                     activeKey={state.tab}
                     onSelect={actions.selectTab}
                 >
@@ -31,7 +34,8 @@ const Tabs = ({ state, actions }) => {
                 <Nav
                     style={{
                         display: 'inline-block',
-                        minWidth: 80
+                        minWidth: 80,
+                        textAlign: 'left'
                     }}
                     navStyle="tabs"
                     stacked

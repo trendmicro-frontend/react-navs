@@ -10,6 +10,9 @@ const PanelTabs = ({ state, actions }) => {
             <div style={{ border: '1px solid #bbb', minHeight: 250 }}>
                 <Nav
                     navStyle="panel-tabs"
+                    style={{
+                        textAlign: 'center'
+                    }}
                     activeKey={state.tab}
                     onSelect={actions.selectTab}
                 >

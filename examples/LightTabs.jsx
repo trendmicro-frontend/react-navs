@@ -11,6 +11,9 @@ const LightTabs = ({ state, actions }) => {
             <div style={{ minHeight: 40 }}>
                 <Nav
                     navStyle="light-tabs"
+                    style={{
+                        textAlign: 'center'
+                    }}
                     activeKey={state.tab}
                     onSelect={actions.selectTab}
                 >
@@ -29,8 +32,12 @@ const LightTabs = ({ state, actions }) => {
             <h5>Stacked</h5>
             <div style={{ minHeight: 180 }}>
                 <Nav
-                    style={{ display: 'inline-block', minWidth: 80 }}
                     navStyle="light-tabs"
+                    style={{
+                        display: 'inline-block',
+                        minWidth: 80,
+                        textAlign: 'left'
+                    }}
                     stacked
                     activeKey={state.tab}
                     onSelect={actions.selectTab}
@@ -50,10 +57,10 @@ const LightTabs = ({ state, actions }) => {
             <h5>Justified</h5>
             <div style={{ minHeight: 40 }}>
                 <Nav
+                    navStyle="light-tabs"
                     style={{
                         textAlign: 'center'
                     }}
-                    navStyle="light-tabs"
                     justified
                     activeKey={state.tab}
                     onSelect={actions.selectTab}
