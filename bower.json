@@ -1,6 +1,7 @@
 {
   "name": "@trendmicro/react-navs",
   "description": "Trend Micro Components: React Navs",
+  "theme": "minimalism",
   "authors": [
     {
       "name": "Cheton Wu",
@@ -9,7 +10,11 @@
     }
   ],
   "homepage": "https://github.com/trendmicro-frontend/react-navs",
-  "snapshots": [],
+  "snapshots": [
+    "./snapshots/tabs.png",
+    "./snapshots/light-tabs.png",
+    "./snapshots/panel-tabs.png"
+  ],
   "keywords": [
     "react",
     "react-navs"
