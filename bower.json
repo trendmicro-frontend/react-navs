@@ -16,6 +16,7 @@
     "./snapshots/panel-tabs.png"
   ],
   "keywords": [
+    "navs",
     "react",
     "react-navs"
   ],
