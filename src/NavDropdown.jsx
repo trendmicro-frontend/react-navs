@@ -5,6 +5,7 @@ import shallowCompare from 'react-addons-shallow-compare';
 import Anchor from '@trendmicro/react-anchor';
 import Dropdown from '@trendmicro/react-dropdown';
 import splitComponentProps from './splitComponentProps';
+import styles from './index.styl';
 
 class NavDropdown extends Component {
     static propTypes = {
@@ -70,6 +71,7 @@ class NavDropdown extends Component {
     render() {
         const {
             title,
+            noCaret,
             activeKey,
             activeHref,
             className,
@@ -77,6 +79,7 @@ class NavDropdown extends Component {
             children,
             ...props
         } = this.props;
+        const useCaret = !noCaret;
 
         const active = this.isActive(this, activeKey, activeHref);
         delete props.active;
@@ -100,11 +103,14 @@ class NavDropdown extends Component {
             <Dropdown
                 {...dropdownProps}
                 componentClass="li"
-                className={classNames(className, { active })}
+                className={classNames(className, { [styles.active]: active })}
                 style={style}
             >
-                <Dropdown.Toggle {...toggleProps}>
+                <Dropdown.Toggle noCaret {...toggleProps}>
                     {title}
+                    {useCaret &&
+                    <span className={styles.caret} />
+                    }
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
                     {dropdownMenuItems}

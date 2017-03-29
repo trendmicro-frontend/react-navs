@@ -1,4 +1,25 @@
-/*! react-navs v0.7.1 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.8.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+.navs---caret---3CkEt {
+  margin-left: 4px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 4px dashed #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+.navs---nav---1zbOb > li > a .navs---caret---3CkEt {
+  margin-left: 4px;
+}
+.navs---nav---1zbOb.navs---nav-tabs---3lUn4 > li > a .navs---caret---3CkEt,
+.navs---nav---1zbOb.navs---nav-light-tabs---2sgeU > li > a .navs---caret---3CkEt,
+.navs---nav---1zbOb.navs---nav-panel-tabs---3rU6S > li > a .navs---caret---3CkEt {
+  border-top: 4px dashed #666;
+}
+.navs---nav---1zbOb.navs---navbar-nav---31TRb > li > a .navs---caret---3CkEt {
+  border-top: 4px dashed #fff;
+}
 .navs---nav---1zbOb {
   margin-bottom: 0;
   padding-left: 0;
@@ -21,10 +42,6 @@
 .navs---nav---1zbOb > li > a:focus,
 .navs---nav---1zbOb > li > a:active {
   background-color: #eee;
-}
-.navs---nav---1zbOb > li > a .navs---caret---3CkEt {
-  margin-left: 4px;
-  border-top: 4px dashed #fff;
 }
 .navs---nav---1zbOb > li.navs---disabled---eCY9b > a {
   color: #e6e6e6;
@@ -50,6 +67,47 @@
 }
 .navs---nav---1zbOb > li > a > img {
   max-width: none;
+}
+.navs---navbar-nav---31TRb {
+  float: left;
+  margin: 0;
+}
+.navs---navbar-nav---31TRb > li {
+  float: left;
+}
+.navs---navbar-nav---31TRb > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > li {
+  border-right: 1px solid #c22327;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > li > a {
+  color: #fff;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > li > a:hover,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > li > a:focus {
+  color: #fff;
+  background-color: #e15054;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > li:hover > a {
+  color: #fff;
+  background-color: #e15054;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32 > a,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32:hover > a,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32 > a:hover,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32:hover > a:hover,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32 > a:focus,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---active---2-a32:hover > a:focus {
+  color: #fff;
+  background-color: #c22327;
+}
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---disabled---eCY9b > a,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---disabled---eCY9b > a:hover,
+.navs---navbar-nav---31TRb.navs---navbar-default---3rqTh > .navs---disabled---eCY9b > a:focus {
+  color: #ccc;
+  background-color: transparent;
 }
 .navs---nav-tabs---3lUn4 > li {
   float: left;

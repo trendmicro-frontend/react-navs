@@ -39,7 +39,7 @@ class Nav extends Component {
     };
     static contextTypes = {
         $tm_navbar: PropTypes.shape({
-            navStyle: PropTypes.string,
+            navbarStyle: PropTypes.string,
             onSelect: PropTypes.func
         })
     };
@@ -75,7 +75,8 @@ class Nav extends Component {
         const navbar = this.context.$tm_navbar;
         const classes = {
             [styles.nav]: true,
-            [styles.navbar]: navbar && navStyle === 'navbar',
+            [styles.navbarNav]: navbar && navStyle === 'navbar',
+            [styles.navbarDefault]: navbar && navbar.navbarStyle === 'default',
             [styles.navTabs]: navStyle === 'tabs',
             [styles.navLightTabs]: navStyle === 'light-tabs',
             [styles.navPanelTabs]: navStyle === 'panel-tabs',

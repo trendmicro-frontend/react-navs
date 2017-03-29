@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from '@trendmicro/react-dropdown';
 import { Nav, NavItem, NavDropdown } from '../src';
-import Section from './Section';
+import { Section } from './layout';
 
 const LightTabs = ({ state, actions }) => {
     return (

@@ -3,7 +3,7 @@ import '@trendmicro/react-buttons/dist/react-buttons.css';
 import '@trendmicro/react-dropdown/dist/react-dropdown.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './Navbar';
+import * as Layout from './layout';
 import Tabs from './Tabs';
 import LightTabs from './LightTabs';
 import PanelTabs from './PanelTabs';
@@ -24,7 +24,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <Navbar name={name} url={url} />
+                <Layout.Navbar name={name} url={url} />
                 <div className="container-fluid" style={{ padding: '20px 20px 0' }}>
                     <div className="row">
                         <div className="col-md-6">
