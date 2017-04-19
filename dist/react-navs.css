@@ -1,4 +1,4 @@
-/*! react-navs v0.8.2 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.8.3 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---caret---3CkEt {
   margin-left: 4px;
   display: inline-block;
@@ -17,8 +17,20 @@
 .navs---nav---1zbOb.navs---nav-panel-tabs---3rU6S > li > a .navs---caret---3CkEt {
   border-top: 4px dashed #666;
 }
+.navs---nav---1zbOb.navs---nav-tabs---3lUn4 > li > a .navs---caret---3CkEt.navs---dropup---30DnN,
+.navs---nav---1zbOb.navs---nav-light-tabs---2sgeU > li > a .navs---caret---3CkEt.navs---dropup---30DnN,
+.navs---nav---1zbOb.navs---nav-panel-tabs---3rU6S > li > a .navs---caret---3CkEt.navs---dropup---30DnN {
+  border-top: 0;
+  border-bottom: 4px dashed #666;
+  margin-bottom: 4px;
+}
 .navs---nav---1zbOb.navs---navbar-nav---31TRb > li > a .navs---caret---3CkEt {
   border-top: 4px dashed #fff;
+}
+.navs---nav---1zbOb.navs---navbar-nav---31TRb > li > a .navs---caret---3CkEt.navs---dropup---30DnN {
+  border-top: 0;
+  border-bottom: 4px dashed #fff;
+  margin-bottom: 4px;
 }
 .navs---nav---1zbOb {
   margin-bottom: 0;

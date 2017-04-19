@@ -110,7 +110,12 @@ class NavDropdown extends Component {
                 <Dropdown.Toggle noCaret {...toggleProps}>
                     {title}
                     {useCaret &&
-                    <span className={styles.caret} />
+                    <span
+                        className={classNames(
+                            styles.caret,
+                            { [styles.dropup]: dropdownProps.dropup }
+                        )}
+                    />
                     }
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
