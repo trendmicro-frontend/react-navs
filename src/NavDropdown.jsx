@@ -1,6 +1,7 @@
 /* eslint no-continue: 0 */
 import classNames from 'classnames';
-import React, { Component, PropTypes } from 'react';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import shallowCompare from 'react-addons-shallow-compare';
 import Anchor from '@trendmicro/react-anchor';
 import Dropdown from '@trendmicro/react-dropdown';
