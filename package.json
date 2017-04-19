@@ -1,6 +1,6 @@
 {
   "name": "@trendmicro/react-navs",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Trend Micro Components: React Navs",
   "main": "lib/index.js",
   "files": [
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@trendmicro/react-anchor": "^0.5.4",
-    "@trendmicro/react-dropdown": "^0.6.7",
+    "@trendmicro/react-dropdown": "^0.6.8",
     "chained-function": "^0.5.0",
     "classnames": "^2.2.5",
     "prop-types": "^15.5.8",
