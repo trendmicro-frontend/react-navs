@@ -1,12 +1,11 @@
+import Anchor from '@trendmicro/react-anchor';
 import chainedFunction from 'chained-function';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
-import Anchor from '@trendmicro/react-anchor';
+import React, { PureComponent } from 'react';
 import styles from './index.styl';
 
-class NavItem extends Component {
+class NavItem extends PureComponent {
     static propTypes = {
         // Highlight the nav item as active.
         active: PropTypes.bool,
@@ -46,9 +45,6 @@ class NavItem extends Component {
         }
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return shallowCompare(this, nextProps, nextState);
-    }
     render() {
         const { active, disabled, onClick, className, style, ...props } = this.props;
 

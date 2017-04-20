@@ -1,11 +1,10 @@
 import chainedFunction from 'chained-function';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { cloneElement, Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
+import React, { cloneElement, PureComponent } from 'react';
 import styles from './index.styl';
 
-class Nav extends Component {
+class Nav extends PureComponent {
     static propTypes = {
         // Marks the child NavItem with a matching `href` prop as active.
         activeHref: PropTypes.string,
@@ -45,9 +44,6 @@ class Nav extends Component {
         })
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return shallowCompare(this, nextProps, nextState);
-    }
     isActive({ props }, activeKey, activeHref) {
         if (props.active) {
             return true;

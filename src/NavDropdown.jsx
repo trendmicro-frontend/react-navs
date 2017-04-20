@@ -1,14 +1,12 @@
 /* eslint no-continue: 0 */
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import shallowCompare from 'react-addons-shallow-compare';
 import Anchor from '@trendmicro/react-anchor';
 import Dropdown from '@trendmicro/react-dropdown';
-import splitComponentProps from './splitComponentProps';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { PureComponent } from 'react';
 import styles from './index.styl';
 
-class NavDropdown extends Component {
+class NavDropdown extends PureComponent {
     static propTypes = {
         ...Dropdown.propTypes,
 
@@ -37,9 +35,6 @@ class NavDropdown extends Component {
         }
     };
 
-    shouldComponentUpdate(nextProps, nextState) {
-        return shallowCompare(this, nextProps, nextState);
-    }
     isActive({ props }, activeKey, activeHref) {
         if (props.active) {
             return true;
@@ -86,8 +81,17 @@ class NavDropdown extends Component {
         delete props.active;
         delete props.eventKey;
 
-        const [dropdownProps, toggleProps] = splitComponentProps(props, Dropdown.ControlledComponent);
-
+        // Split component props
+        const dropdownProps = {};
+        const toggleProps = {};
+        Object.keys(props).forEach(propName => {
+            const propValue = props[propName];
+            if (Dropdown.ControlledComponent.propTypes[propName]) {
+                dropdownProps[propName] = propValue;
+            } else {
+                toggleProps[propName] = propValue;
+            }
+        });
         toggleProps.componentClass = Anchor;
 
         const dropdownMenuItems = React.Children.map(children, child => {
