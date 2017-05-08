@@ -52,17 +52,25 @@ class NavDropdown extends PureComponent {
             return false;
         }
 
-        for (let child of props.children) {
+        const { children } = props;
+        let result = false;
+
+        React.Children.forEach(children, child => {
+            if (result) {
+                return;
+            }
+
             if (!React.isValidElement(child)) {
-                continue;
+                return;
             }
 
             if (this.isActive(child, activeKey, activeHref)) {
-                return true;
+                result = true;
+                return;
             }
-        }
+        });
 
-        return false;
+        return result;
     }
     render() {
         const {
