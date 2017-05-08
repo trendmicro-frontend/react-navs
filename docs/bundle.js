@@ -28132,6 +28132,8 @@ var NavDropdown = (_temp2 = _class = function (_PureComponent) {
     NavDropdown.prototype.isActive = function isActive(_ref, activeKey, activeHref) {
         var props = _ref.props;
 
+        var _this2 = this;
+
         if (props.active) {
             return true;
         }
@@ -28148,34 +28150,30 @@ var NavDropdown = (_temp2 = _class = function (_PureComponent) {
             return false;
         }
 
-        for (var _iterator = props.children, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : _iterator[Symbol.iterator]();;) {
-            var _ref2;
+        var children = props.children;
 
-            if (_isArray) {
-                if (_i >= _iterator.length) break;
-                _ref2 = _iterator[_i++];
-            } else {
-                _i = _iterator.next();
-                if (_i.done) break;
-                _ref2 = _i.value;
+        var result = false;
+
+        _react2.default.Children.forEach(children, function (child) {
+            if (result) {
+                return;
             }
-
-            var child = _ref2;
 
             if (!_react2.default.isValidElement(child)) {
-                continue;
+                return;
             }
 
-            if (this.isActive(child, activeKey, activeHref)) {
-                return true;
+            if (_this2.isActive(child, activeKey, activeHref)) {
+                result = true;
+                return;
             }
-        }
+        });
 
-        return false;
+        return result;
     };
 
     NavDropdown.prototype.render = function render() {
-        var _this2 = this,
+        var _this3 = this,
             _classNames,
             _classNames2;
 
@@ -28214,7 +28212,7 @@ var NavDropdown = (_temp2 = _class = function (_PureComponent) {
             }
 
             return _react2.default.cloneElement(child, {
-                active: _this2.isActive(child, activeKey, activeHref)
+                active: _this3.isActive(child, activeKey, activeHref)
             });
         });
 
@@ -29323,4 +29321,4 @@ exports.Section = _Section3.default;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?11db293ec7e9d2f8d301
+//# sourceMappingURL=bundle.js.map?8b96fb2f542111b5e045
