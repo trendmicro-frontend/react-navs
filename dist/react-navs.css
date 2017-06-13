@@ -1,4 +1,4 @@
-/*! react-navs v0.8.5 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.8.6 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---caret---3CkEt {
   margin-left: 4px;
   display: inline-block;
@@ -36,6 +36,15 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
+  zoom: 1;
+}
+.navs---nav---1zbOb:before,
+.navs---nav---1zbOb:after {
+  content: "";
+  display: table;
+}
+.navs---nav---1zbOb:after {
+  clear: both;
 }
 .navs---nav---1zbOb > li {
   position: relative;
