@@ -1,4 +1,4 @@
-/*! react-navs v0.8.6 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.9.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---caret---3CkEt {
   margin-left: 4px;
   display: inline-block;
@@ -279,12 +279,61 @@
   top: auto;
   left: auto;
 }
-.navs---nav-stacked---32oCw > li {
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li {
   float: none;
 }
-.navs---nav-stacked---32oCw > li + li {
-  margin-top: 2px;
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li > a {
+  background: inherit;
+  border: none;
+  padding: 9px 16px;
+}
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li > a:hover {
+  background: inherit;
+  border-left: 2px solid #bbb;
+  padding-left: 14px;
+}
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li > a:focus {
+  background: inherit;
+}
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li + li {
+  margin-top: 1px;
   margin-left: 0;
+}
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a,
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a:hover,
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a:focus {
+  background-color: #f4f4f4;
+  border: none;
+  border-left: 2px solid #db3d44;
+  color: #222;
+  font-weight: bold;
+  padding: 9px 16px;
+  padding-left: 14px;
+}
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li {
+  float: none;
+}
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li > a {
+  background: inherit;
+  border: none;
+  padding: 9px 16px;
+}
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li > a:hover,
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li > a:focus {
+  background: #f4f4f4;
+}
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li + li {
+  margin-top: 1px;
+  margin-left: 0;
+}
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a,
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a:hover,
+.navs---nav-light-tabs---2sgeU.navs---nav-stacked---32oCw > li.navs---active---2-a32 > a:focus {
+  background-color: inherit;
+  border: none;
+  color: #db3d44;
+  font-weight: bold;
+  padding: 9px 16px;
 }
 
 /*# sourceMappingURL=react-navs.css.map*/
