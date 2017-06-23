@@ -1,15 +1,12 @@
+@import "reset-context";
+
 .nav {
-    // https://www.paulirish.com/2012/box-sizing-border-box-ftw/
-    box-sizing: border-box;
-    *, *:before, *:after {
-        box-sizing: inherit;
-    }
+    reset-context();
+    clearfix();
 
     margin: 0;
     padding-left: 0;
     list-style: none;
-
-    clearfix();
 }
 .nav > li {
     position: relative;
