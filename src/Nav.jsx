@@ -75,6 +75,7 @@ class Nav extends PureComponent {
             [styles.navbarNav]: navbar && navStyle === 'navbar',
             [styles.navbarDefault]: navbar && navbar.navbarStyle === 'default',
             [styles.navTabs]: navStyle === 'tabs',
+            [styles.navTabsBordered]: navStyle === 'tabs' && !justified && !stacked,
             [styles.navLightTabs]: navStyle === 'light-tabs',
             [styles.navPanelTabs]: navStyle === 'panel-tabs',
             [styles.navJustified]: justified || navStyle === 'panel-tabs',
