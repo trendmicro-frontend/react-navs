@@ -37,6 +37,9 @@ Demo: https://trendmicro-frontend.github.io/react-navs
     onSelect={(eventKey, event) => {
         this.setState({ activeTab: eventKey });
     }}
+    style={{
+        borderBottomColor: 'transparent' // Make a transparent bottom border
+    }}
 >
     <NavItem eventKey={1}>Item 1</NavItem>
     <NavItem eventKey={2}>Item 2</NavItem>
