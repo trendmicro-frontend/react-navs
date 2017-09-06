@@ -1,4 +1,4 @@
-/*! react-navs v0.9.2 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.10.0 | (c) 2017 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---caret---3CkEt {
   margin-left: 4px;
   display: inline-block;
@@ -141,8 +141,12 @@
   color: #ccc;
   background-color: transparent;
 }
+.navs---nav-tabs---3lUn4 {
+  border-bottom: 1px solid #bbb;
+}
 .navs---nav-tabs---3lUn4 > li {
   float: left;
+  margin-bottom: -1px;
 }
 .navs---nav-tabs---3lUn4 > li + li {
   margin-left: -1px;
@@ -253,6 +257,12 @@
 .navs---nav-panel-tabs---3rU6S.navs---nav-justified---10iqz > li.navs---active---2-a32 > a:focus {
   border-bottom: 0;
 }
+.navs---nav-tabs---3lUn4.navs---nav-justified---10iqz {
+  border: none;
+}
+.navs---nav-tabs---3lUn4.navs---nav-justified---10iqz > li {
+  margin: 0;
+}
 .navs---nav-justified---10iqz {
   width: 100%;
 }
@@ -290,8 +300,12 @@
   top: auto;
   left: auto;
 }
+.navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw {
+  border: none;
+}
 .navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li {
   float: none;
+  margin: 0;
 }
 .navs---nav-tabs---3lUn4.navs---nav-stacked---32oCw > li > a {
   background: inherit;
