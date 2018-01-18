@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItem } from '@trendmicro/react-dropdown';
-import { Nav, NavItem, NavDropdown } from '../src';
+import { Nav, NavItem, NavDropdown, TabContent, TabPane } from '../src';
 import { Section } from './layout';
 
 const PanelTabs = ({ state, actions }) => {
@@ -26,6 +26,26 @@ const PanelTabs = ({ state, actions }) => {
                         <MenuItem eventKey={4.3}>Separated link</MenuItem>
                     </NavDropdown>
                 </Nav>
+                <TabContent activeKey={state.tab}>
+                    <TabPane eventKey={1}>
+                        Tab 1 content
+                    </TabPane>
+                    <TabPane eventKey={2}>
+                        Tab 2 content
+                    </TabPane>
+                    <TabPane eventKey={3}>
+                        Tab 3 content
+                    </TabPane>
+                    <TabPane eventKey={4.1}>
+                        Tab 4.1 content
+                    </TabPane>
+                    <TabPane eventKey={4.2}>
+                        Tab 4.2 content
+                    </TabPane>
+                    <TabPane eventKey={4.3}>
+                        Tab 4.3 content
+                    </TabPane>
+                </TabContent>
             </div>
         </Section>
     );

@@ -17,12 +17,19 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 2. At this point you can import `@trendmicro/react-navs` and its styles in your application as follows:
 
   ```js
-  import { Nav, NavItem, NavDropdown, MenuItem } from '@trendmicro/react-navs';
+  import {
+      Nav,
+      NavItem,
+      NavDropdown, // optional
+      MenuItem, // optional
+      TabContent,
+      TabPane
+  } from '@trendmicro/react-navs';
 
   // Be sure to include styles at some point, probably during your bootstraping
   import '@trendmicro/react-navs/dist/react-navs.css';
   
-  // Include react-dropdown.css when using NavDropdown
+  // [Optional] Include react-dropdown.css when using NavDropdown
   import '@trendmicro/react-dropdown/dist/react-dropdown.css'
   ```
 
@@ -51,6 +58,14 @@ Demo: https://trendmicro-frontend.github.io/react-navs
         <MenuItem eventKey={4.3}>Separated link</MenuItem>
     </NavDropdown>
 </Nav>
+<TabContent activeKey={this.state.activeTab}>
+    <TabPane eventKey={1}>Tab 1 content</TabPane>
+    <TabPane eventKey={2}>Tab 2 content</TabPane>
+    <TabPane eventKey={3}>Tab 3 content</TabPane>
+    <TabPane eventKey={4.1}>Tab 4.1 content</TabPane>
+    <TabPane eventKey={4.2}>Tab 4.2 content</TabPane>
+    <TabPane eventKey={4.3}>Tab 4.3 content</TabPane>
+</TabContent>
 ```
 
 ### Light Tabs
@@ -73,6 +88,14 @@ Demo: https://trendmicro-frontend.github.io/react-navs
         <MenuItem eventKey={4.3}>Separated link</MenuItem>
     </NavDropdown>
 </Nav>
+<TabContent activeKey={this.state.activeTab}>
+    <TabPane eventKey={1}>Tab 1 content</TabPane>
+    <TabPane eventKey={2}>Tab 2 content</TabPane>
+    <TabPane eventKey={3}>Tab 3 content</TabPane>
+    <TabPane eventKey={4.1}>Tab 4.1 content</TabPane>
+    <TabPane eventKey={4.2}>Tab 4.2 content</TabPane>
+    <TabPane eventKey={4.3}>Tab 4.3 content</TabPane>
+</TabContent>
 ```
 
 ### Panel Tabs
@@ -95,6 +118,14 @@ Demo: https://trendmicro-frontend.github.io/react-navs
         <MenuItem eventKey={4.3}>Separated link</MenuItem>
     </NavDropdown>
 </Nav>
+<TabContent activeKey={this.state.activeTab}>
+    <TabPane eventKey={1}>Tab 1 content</TabPane>
+    <TabPane eventKey={2}>Tab 2 content</TabPane>
+    <TabPane eventKey={3}>Tab 3 content</TabPane>
+    <TabPane eventKey={4.1}>Tab 4.1 content</TabPane>
+    <TabPane eventKey={4.2}>Tab 4.2 content</TabPane>
+    <TabPane eventKey={4.3}>Tab 4.3 content</TabPane>
+</TabContent>
 ```
 
 ## API
@@ -155,7 +186,19 @@ header | boolean | false | Style the menu item as a header label, useful for des
 href | string | | HTML `href` attribute corresponding to `a.href`.
 onClick | function(event) | | Callback fired when the menu item is clicked.
 onSelect | function(eventKey, event) | | Callback fired when the menu item is selected.
+
+#### TabContent
+
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+activeKey | any | |
+
+#### TabPane
  
+Name | Type | Default | Description
+:--- | :--- | :------ | :----------
+eventKey | any | |
+
 ## License
 
 MIT
