@@ -370,5 +370,11 @@
 .navs---nav-panel-tabs---3rU6S.navs---nav-justified---10iqz > li + li > a:hover {
   border-left: 1px solid #ddd;
 }
+.navs---tab-content---2VBNa > .navs---tab-pane---2dbBX {
+  display: none;
+}
+.navs---tab-content---2VBNa > .navs---active---2-a32 {
+  display: block;
+}
 
 /*# sourceMappingURL=react-navs.css.map*/
