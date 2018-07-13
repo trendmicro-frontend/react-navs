@@ -19,7 +19,7 @@ const TabPane = ({ active, lazy, eventKey, className, ...props }) => {
 
 TabPane.propTypes = {
     active: PropTypes.bool,
-    eventKey: PropTypes.string,
+    eventKey: PropTypes.any,
     lazy: PropTypes.bool,
 };
 

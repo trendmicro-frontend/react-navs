@@ -28,7 +28,7 @@ Demo: https://trendmicro-frontend.github.io/react-navs
 
   // Be sure to include styles at some point, probably during your bootstraping
   import '@trendmicro/react-navs/dist/react-navs.css';
-  
+
   // [Optional] Include react-dropdown.css when using NavDropdown
   import '@trendmicro/react-dropdown/dist/react-dropdown.css'
   ```
@@ -194,10 +194,11 @@ Name | Type | Default | Description
 activeKey | any | |
 
 #### TabPane
- 
-Name | Type | Default | Description
-:--- | :--- | :------ | :----------
-eventKey | any | |
+
+Name     | Type    | Default | Description
+---------|---------|---------|------------
+eventKey | any     |         |
+lazy     | boolean | false   | If `true`, the TabPane will be unmounted when inactive.
 
 ## License
 
