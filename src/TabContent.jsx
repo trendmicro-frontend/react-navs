@@ -20,6 +20,7 @@ class TabContent extends PureComponent {
                 {React.Children.map(children, child => {
                     if (React.isValidElement(child) && child.type === TabPane) {
                         const active = (child.props.eventKey === activeKey);
+
                         return cloneElement(child, {
                             active
                         });
