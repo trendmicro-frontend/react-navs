@@ -25298,6 +25298,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var getComponentType = function getComponentType(Component) {
+    return Component ? _react2.default.createElement(Component, null).type : undefined;
+};
+
 var TabContent = (_temp = _class = function (_PureComponent) {
     _inherits(TabContent, _PureComponent);
 
@@ -25320,7 +25324,7 @@ var TabContent = (_temp = _class = function (_PureComponent) {
                 className: (0, _classnames2.default)(className, _index2.default.tabContent)
             }),
             _react2.default.Children.map(children, function (child) {
-                if (_react2.default.isValidElement(child) && child.type === _TabPane2.default) {
+                if (_react2.default.isValidElement(child) && child.type === getComponentType(_TabPane2.default)) {
                     var active = child.props.eventKey === activeKey;
 
                     return (0, _react.cloneElement)(child, {
@@ -26621,4 +26625,4 @@ exports.Section = _Section3.default;
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map?da3d2f03ebe773f12cb6
+//# sourceMappingURL=bundle.js.map?4fb8f4ffa1848784528d
