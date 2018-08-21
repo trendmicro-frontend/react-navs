@@ -1,7 +1,32 @@
 import React from 'react';
 import { MenuItem } from '@trendmicro/react-dropdown';
+import Table from '@trendmicro/react-table';
+import '@trendmicro/react-table/dist/react-table.css';
+
 import { Nav, NavItem, NavDropdown, TabContent, TabPane } from '../src';
 import { Section } from './layout';
+
+const columns1 = [
+    { title: 'Event Type', dataIndex: 'eventType1' },
+    { title: 'Affected Devices', dataIndex: 'affectedDevices1' },
+    { title: 'Detections', dataIndex: 'detections1', width: 800 }
+];
+
+const columns2 = [
+    { title: 'Event Type', dataIndex: 'eventType2' },
+    { title: 'Affected Devices', dataIndex: 'affectedDevices2' },
+    { title: 'Detections', dataIndex: 'detections2' },
+    { title: 'User', dataIndex: 'user' },
+    { title: 'Domain', dataIndex: 'domain' }
+];
+
+const columns3 = [
+    { title: 'Event Type', dataIndex: 'eventType3' },
+    { title: 'Affected Devices', dataIndex: 'affectedDevices3' },
+    { title: 'Detections', dataIndex: 'detections3' },
+    { title: 'Endpoint', dataIndex: 'endpoint' },
+    { title: 'Policy', dataIndex: 'policy' }
+];
 
 const LightTabs = ({ state, actions }) => {
     return (
@@ -29,13 +54,37 @@ const LightTabs = ({ state, actions }) => {
                 </Nav>
                 <TabContent activeKey={state.tab}>
                     <TabPane eventKey={1}>
-                        Tab 1 content
+                        <Table
+                            justified={false}
+                            hoverable={false}
+                            maxHeight={180}
+                            useFixedHeader={true}
+                            rowKey="id"
+                            columns={columns1}
+                            data={[]}
+                        />
                     </TabPane>
                     <TabPane eventKey={2}>
-                        Tab 2 content
+                        <Table
+                            justified={false}
+                            hoverable={false}
+                            maxHeight={180}
+                            useFixedHeader={true}
+                            rowKey="id"
+                            columns={columns2}
+                            data={[]}
+                        />
                     </TabPane>
                     <TabPane eventKey={3}>
-                        Tab 3 content
+                        <Table
+                            justified={false}
+                            hoverable={false}
+                            maxHeight={180}
+                            useFixedHeader={true}
+                            rowKey="id"
+                            columns={columns3}
+                            data={[]}
+                        />
                     </TabPane>
                     <TabPane eventKey={4.1}>
                         Tab 4.1 content

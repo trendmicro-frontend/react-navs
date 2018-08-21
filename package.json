@@ -54,6 +54,7 @@
   },
   "devDependencies": {
     "@trendmicro/react-buttons": "~1.3.0",
+    "@trendmicro/react-table": "^1.0.0-alpha",
     "babel-cli": "~6.26.0",
     "babel-core": "~6.26.0",
     "babel-eslint": "~8.2.1",
