@@ -1,4 +1,4 @@
-/*! react-navs v0.11.5 | (c) 2018 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
+/*! react-navs v0.11.6 | (c) 2018 Trend Micro Inc. | MIT | https://github.com/trendmicro-frontend/react-navs */
 .navs---caret---3CkEt {
   margin-left: 4px;
   display: inline-block;
@@ -371,6 +371,16 @@
   border-left: 1px solid #ddd;
 }
 .navs---tab-content---2VBNa > .navs---tab-pane---2dbBX {
+  display: none;
+}
+.navs---tab-content---2VBNa > .navs---active---2-a32 {
+  display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  height: inherit;
+}
+.navs---tab-content---2VBNa > .navs---inactive---2eyMi {
   display: block;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -380,13 +390,6 @@
   margin: 0;
   pointer-events: none;
   overflow: hidden;
-}
-.navs---tab-content---2VBNa > .navs---active---2-a32 {
-  display: block;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  height: inherit;
 }
 
 /*# sourceMappingURL=react-navs.css.map*/

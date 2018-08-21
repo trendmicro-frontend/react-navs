@@ -11,7 +11,8 @@ const TabPane = ({ active, lazy, eventKey, className, ...props }) => {
         <div
             {...props}
             className={cx(className, styles.tabPane, {
-                [styles.active]: active
+                [styles.active]: active,
+                [styles.inactive]: !active
             })}
         />
     );
