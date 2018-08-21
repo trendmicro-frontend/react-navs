@@ -371,10 +371,18 @@
   border-left: 1px solid #ddd;
 }
 .navs---tab-content---2VBNa > .navs---tab-pane---2dbBX {
-  display: none;
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  height: 0;
 }
 .navs---tab-content---2VBNa > .navs---active---2-a32 {
   display: block;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  height: inherit;
 }
 
 /*# sourceMappingURL=react-navs.css.map*/
