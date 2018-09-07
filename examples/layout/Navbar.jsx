@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styles from './Navbar.styl';
 
-export default class extends Component {
+export default class NavBar extends Component {
     static propTypes = {
         name: PropTypes.string,
         url: PropTypes.string
