@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-	title: 'React Radio',
+	title: 'React Navs',
 	styleguideDir: 'docs/',
 	webpackConfig: require('./webpack.config.js'),
 	components: ['src/*.jsx', 'examples/App.js'],
