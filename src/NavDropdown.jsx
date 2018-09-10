@@ -10,12 +10,12 @@ class NavDropdown extends PureComponent {
     static propTypes = {
         ...Dropdown.propTypes,
 
-        // Highlight the nav dropdown as active.
+        /** Highlight the nav dropdown as active. */
         active: PropTypes.bool,
 
         title: PropTypes.node.isRequired,
 
-        // Whether to prevent a caret from being rendered next to the title.
+        /** Whether to prevent a caret from being rendered next to the title. */
         noCaret: PropTypes.bool
     };
     static defaultProps = {
